@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+  font-size: 36px;
+}
+.material-icons{
+    font-size: 30px;
+    color: #FF4848;
+   
+}
