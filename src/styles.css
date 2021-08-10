@@ -23,6 +23,19 @@ main{
     transition: all 0.3s ease;
 
 }
+#profile-elias{
+    background-image: url('assets/imagen/Elias-vitor.png');
+    background-repeat: round;
+    padding: 110px; 
+    margin-bottom: 20px; 
+}
+@media screen and (max-width:600px){
+    #profile-elias{
+        height: 350px;
+       
+    }
+} 
+
 #Profile-rt{
     background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url('assets/imagen/pexels-eberhard-grossgasteiger-1624496.jpg');
     overflow: hidden;
