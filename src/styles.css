@@ -1,1 +1,13 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --texcolor:red;
+}
+.button-primary{
+    padding:12px;
+    border-radius: 25px 25px;
+    border: none;
+    background-color: black;
+    color:--var(--texcolor)
+    
+}
