@@ -8,7 +8,7 @@ import { HomeComponent } from './shared/home/home.component';
 import { RouterModule } from '@angular/router';
 import { SettingsColorComponent } from './shared/settings-color/settings-color.component';
 import { ThemeComponent } from './shared/theme/theme.component';
-import { SharedComponent } from './about/shared/shared.component';
+
 import { AboutComponent } from './shared/about/about.component';
 
 @NgModule({
@@ -18,7 +18,6 @@ import { AboutComponent } from './shared/about/about.component';
     HomeComponent,
     SettingsColorComponent,
     ThemeComponent,
-    SharedComponent,
     AboutComponent
   ],
   imports: [
