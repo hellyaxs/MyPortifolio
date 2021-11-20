@@ -28,8 +28,29 @@ i.bi{
 .theme-Light{
     background-color: #242424;
     color:azure;
+    --button-background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    --button-box-shadow:  5px 5px 10px #cfcfcf,
+    -5px -5px 10px #ffffff;
 }
 .theme-Dark{
     background-color: white;
     color:black;
+    --button-background: #242424;
+    --button-box-shadow:  18px 18px 36px #1b1b1b,
+                 -18px -18px 36px #2d2d2d;
+}
+.modal-show{
+  
+    background: var(--button-background);
+    box-shadow:  var(--button-box-shadow);
+}
+.modal-show:hover{
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+}
+.modal-show:active{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
 }

@@ -2,3 +2,20 @@ ul{
     display:flex;
     list-style-type: none;
 }
+.center{
+    width:100%;
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom: 4rem;
+}
+.profile-img{
+    background-image: url("/assets/Elias-vitor.png");
+    background-size: contain;
+
+    width: 300px;
+    height: 300px;
+    border: outset 10px  tomato;
+    
+    border-color: repeating-radial-gradient(circle farthest-side at 50% 50%, #f3f1f1 0%, black 80%);
+    
+}
