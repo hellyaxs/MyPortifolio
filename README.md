@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
- Nova cara para o meu portifolio usando agora o angular 12 para o desenvolvimento da aplicação
- -`vantagens`: 
+ Nova cara para o meu portifolio usando agora o angular 12.1.3 para o desenvolvimento da aplicação
+ -`frameworks-CSS`: bootstrap, bootstrap-icons 
 
 ## Code scaffolding
 

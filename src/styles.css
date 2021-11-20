@@ -1,5 +1,6 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "https://fonts.googleapis.com/css2? family = Rubik: wght @ 600 & display = swap";
 /* You can add global styles to this file, and also import other style files */
 :root{
     --texcolor:red;
@@ -16,10 +17,19 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 i.bi{
     color: black;
     position: relative;
     width: 1rem;
     height: 1rem;
+}
+.theme-Light{
+    background-color: #242424;
+    color:azure;
+}
+.theme-Dark{
+    background-color: white;
+    color:black;
 }
