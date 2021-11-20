@@ -1,30 +1,38 @@
 
-.modal{
-    position:fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    width: 100%;
-    height: 100%;
-    transition: all 0.45s;
-}
-.modal::after{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width:1000px;
-    height: 1000px;
-    border-radius: 50%;
-    background: #2a282f;
-
-}
-
-.modal.open{
+input[type="checkbox"]{
+    opacity: 0;
+    display: none;
     transform: scale(1);
+      transition: all linear 1.45s;
+}
+input[type="checkbox"]:checked ~.wapper{
+      display: flex;
+      transform: scale(1);
+      transition: linear 1.45s;
+     
+}
+.modal-show{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    z-index: 1;
+    cursor: pointer;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+}
+.modal-show:hover{
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+}
+.modal-show:active{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
 }
 
 ul{
@@ -32,11 +40,21 @@ ul{
     margin: 0 auto;
 }
 .wapper{
+    position: absolute;
+    top: 60px;
     width: 100%;
-    height:100vh;
+    height:75vh;
     align-items: center;
     display: flex;
-
-      
-    background: #000;
+    opacity: 1;
+    transform: scale(1.2);
+    transition: linear 1.45s;
+    background-color: rgba(31, 31, 31, 0.479);
+    
+    display: none;
+}
+i.bi{
+    color: black;
+    position: relative;
+    font-size: 2rem;
 }

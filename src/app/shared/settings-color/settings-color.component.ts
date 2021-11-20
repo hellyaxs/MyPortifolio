@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsColorComponent implements OnInit {
 
+  colors:String[] = ['backgroud-color:tomato;'];
+
   constructor() { }
 
   ngOnInit(): void {

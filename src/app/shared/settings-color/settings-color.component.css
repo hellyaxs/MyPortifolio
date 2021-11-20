@@ -1,0 +1,51 @@
+.modal-show{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6rem;
+    right: 1.3rem;
+    z-index: 1;
+    border-style: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+}
+.modal-show:hover{
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+}
+.modal-show:active{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #cfcfcf,
+                 -5px -5px 10px #ffffff;
+}
+.modal-show:active ~.modal-colores{
+    display: flex;
+}
+.modal-colores{
+
+   position: absolute;
+   padding:0.6rem;
+   top:6rem;
+   right: 3rem;
+   width: 200px;
+   height: 100px;
+   display:none;
+   background-color: aqua;
+   border-radius:12%;
+
+}
+.modal-colores::after{
+
+}
+
+.colors{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display:flex;
+    background: #000;
+}

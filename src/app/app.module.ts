@@ -22,7 +22,11 @@ import { AboutComponent } from './shared/about/about.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule,
+    RouterModule.forRoot([
+      { path:'' , component:HomeComponent},
+      {path:'About' ,component:AboutComponent}
+    ])
    
   ],
   providers: [],

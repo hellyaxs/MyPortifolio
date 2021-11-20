@@ -29,9 +29,13 @@
     background-image: url("/assets/Elias-vitor.png");
     background-size: contain;
     border-radius: 50%;
-    
+   
     width: 400px;
     height: 400px;
+    border: outset 10px  tomato;
+    
+    border-color: repeating-radial-gradient(circle farthest-side at 50% 50%, #f3f1f1 0%, black 80%);
+    
 }
 .container{
     display: grid;

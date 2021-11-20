@@ -1,20 +1,22 @@
 
-  
+ 
+  <label class="modal-show" for="modal-toggle"><i class="bi bi-list p-2"></i></label>
+  <input type="checkbox" id="modal-toggle" class="modal-toggle">
+
 
 <div class="wapper">
   
-    <ul>
-      <div class="container">
-        
-        <li><button class="button-primary shadow p-3 mb-2 bg-body rounded-pill">Home</button></li>
-        <li><button class="button-primary shadow p-3 mb-2 bg-body rounded-pill">About</button></li>
-        <li><button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Services</button></li>
-        <li><button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Portifolio</button></li>
-        <li><button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Testimonial</button></li>
-        <li><button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Contact</button></li>
-      </div>
-    </ul>
+
+  <div class="d-grid gap-2 col-3 mx-auto">
+    <button class="button-primary shadow p-3 mb-3 bg-body rounded-pill" type="button" routerLink="">Home</button>
+    <button class="button-primary shadow p-3 mb-3 bg-body rounded-pill" type="button" routerLink="About">About</button>
+    <button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Services</button>
+    <button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Portifolio</button>
+    <button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Testimoinal</button>
+    <button class="button-primary shadow p-3 mb-3 bg-body rounded-pill">Contact</button>
+  </div>
 
 </div>
 
-
+<app-settings-color></app-settings-color>
+<app-theme></app-theme>
