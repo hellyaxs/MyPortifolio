@@ -3,12 +3,12 @@ input[type="checkbox"]{
     opacity: 0;
     display: none;
     transform: scale(1);
-      transition: all linear 1.45s;
+    transition: all linear 0.5s;
 }
 input[type="checkbox"]:checked ~.wapper{
       display: flex;
       transform: scale(1);
-      transition: linear 1.45s;
+      transition: all linear 0.45s;
      
 }
 .modal-show{
@@ -16,7 +16,7 @@ input[type="checkbox"]:checked ~.wapper{
     height: 48px;
     border-radius: 50%;
     position: absolute;
-    top: 1rem;
+    top: 0.6rem;
     right: 5rem;
     z-index: 1;
     cursor: pointer;
@@ -45,8 +45,8 @@ ul{
     align-items: center;
     display: flex;
     opacity: 1;
-    transform: scale(1.2);
-    transition: linear 1.45s;
+    transform: scale(1);
+    transition: all linear 0.45s;
     background-color: rgba(31, 31, 31, 0.479);
     
     display: none;

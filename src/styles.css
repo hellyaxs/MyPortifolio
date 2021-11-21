@@ -31,6 +31,9 @@ i.bi{
     --button-background: linear-gradient(145deg, #e6e6e6, #ffffff);
     --button-box-shadow:  5px 5px 10px #cfcfcf,
     -5px -5px 10px #ffffff;
+    transform: scale(1);
+    transition: all linear 0.4s;
+    font-family: 'Rubik', sans-serif;
 }
 .theme-Dark{
     background-color: white;
@@ -38,11 +41,15 @@ i.bi{
     --button-background: #242424;
     --button-box-shadow:  18px 18px 36px #1b1b1b,
                  -18px -18px 36px #2d2d2d;
+     transform: scale(1);
+     transition: all linear 0.4s;
+    
 }
-.modal-show{
+ .modal-show{
   
-    background: var(--button-background);
-    box-shadow:  var(--button-box-shadow);
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:   5px 5px 10px #cfcfcf,
+    -5px -5px 10px #ffffff;
 }
 .modal-show:hover{
     background: linear-gradient(145deg, #ffffff, #e6e6e6);

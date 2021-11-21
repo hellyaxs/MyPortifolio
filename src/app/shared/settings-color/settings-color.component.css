@@ -8,16 +8,23 @@
     z-index: 1;
     border-style: none;
     cursor: pointer;
+    transform: rotate(0deg);
+    transition: all linear 0.4s;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow:  5px 5px 10px #cfcfcf,
                  -5px -5px 10px #ffffff;
 }
+
 .modal-show:hover{
+    transform: rotate(-135deg);
+    transition: all linear 0.4s;
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
     box-shadow:  5px 5px 10px #cfcfcf,
                  -5px -5px 10px #ffffff;
 }
 .modal-show:active{
+    transform: rotate(2);
+    transition: all linear 0.3s;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow:  5px 5px 10px #cfcfcf,
                  -5px -5px 10px #ffffff;
@@ -35,7 +42,7 @@
    height: 100px;
    display:none;
    background-color: aqua;
-   border-radius:12%;
+   border-radius:1.5rem ;
 
 }
 .modal-colores::after{
