@@ -10,6 +10,7 @@ import { SettingsColorComponent } from './shared/settings-color/settings-color.c
 import { ThemeComponent } from './shared/theme/theme.component';
 
 import { AboutComponent } from './shared/about/about.component';
+import { ContactComponent } from './shared/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,17 @@ import { AboutComponent } from './shared/about/about.component';
     HomeComponent,
     SettingsColorComponent,
     ThemeComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     RouterModule.forRoot([
-      { path:'' , component:HomeComponent},
-      {path:'About' ,component:AboutComponent}
+   
+      { path:'home' , component:HomeComponent},
+      { path:'about' , component:AboutComponent},
+      { path:'contact', component:ContactComponent}
     ])
    
   ],

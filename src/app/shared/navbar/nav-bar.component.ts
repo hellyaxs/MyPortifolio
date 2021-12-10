@@ -7,4 +7,6 @@ import { Component } from "@angular/core";
 })
 export class NavbarComponent{
 
+    components:String[]=['Home','About','Services','Portifolio','Testimoinal','Contact']
+
 }

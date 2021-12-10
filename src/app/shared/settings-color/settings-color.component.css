@@ -1,4 +1,5 @@
-.modal-show{
+
+.button-primary{
     width: 37px;
     height: 37px;
     border-radius: 50%;
@@ -6,30 +7,22 @@
     top: 6rem;
     right: 1.3rem;
     z-index: 1;
-    border-style: none;
-    cursor: pointer;
-    transform: rotate(0deg);
-    transition: all linear 0.4s;
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow:  5px 5px 10px #cfcfcf,
-                 -5px -5px 10px #ffffff;
+    transform: rotate(360deg);
+    transition: all linear 0.9s;
+  
 }
 
-.modal-show:hover{
-    transform: rotate(-135deg);
-    transition: all linear 0.4s;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow:  5px 5px 10px #cfcfcf,
-                 -5px -5px 10px #ffffff;
+.button-primary:hover{
+    transform: rotate(0deg);
+    transition: all linear 0.9s;
+    
 }
-.modal-show:active{
+.button-primary:active{
     transform: rotate(2);
     transition: all linear 0.3s;
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow:  5px 5px 10px #cfcfcf,
-                 -5px -5px 10px #ffffff;
+    
 }
-.modal-show:active ~.modal-colores{
+.button-circle:active ~.modal-colores{
     display: flex;
 }
 .modal-colores{

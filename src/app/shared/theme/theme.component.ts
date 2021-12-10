@@ -8,7 +8,7 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 })
 export class ThemeComponent implements OnInit {
 
-  theme: Theme = 'theme-Dark'
+  theme: Theme = 'theme-Light';
   icon: String = "bi bi-moon-fill";
 
   constructor(@Inject(DOCUMENT) private document: Document,

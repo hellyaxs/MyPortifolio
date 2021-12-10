@@ -1,15 +1,12 @@
 
 input[type="checkbox"]{
-    opacity: 0;
+    position: absolute;
     display: none;
-    transform: scale(1);
-    transition: all linear 0.5s;
+ 
 }
 input[type="checkbox"]:checked ~.wapper{
       display: flex;
-      transform: scale(1);
-      transition: all linear 0.45s;
-     
+   
 }
 .modal-show{
     width: 48px;
@@ -20,42 +17,21 @@ input[type="checkbox"]:checked ~.wapper{
     right: 5rem;
     z-index: 1;
     cursor: pointer;
-   
-}
-.modal-show:hover{
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow:  5px 5px 10px #cfcfcf,
-                 -5px -5px 10px #ffffff;
-}
-.modal-show:active{
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow:  5px 5px 10px #cfcfcf,
-                 -5px -5px 10px #ffffff;
+    
 }
 
 ul{
     list-style-type: none;
     margin: 0 auto;
 }
-.wapper{
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    height:75vh;
-    align-items: center;
-    display: flex;
-    opacity: 1;
-    transform: scale(1);
-    transition: all linear 0.45s;
-    background-color: rgba(31, 31, 31, 0.479);
-    
-    display: none;
-}
+
 button[type="button"]:active ~.wapper{
     display:none;
+    transform: scale(0);
+    transition: all linear 0.4s;
 }
 i.bi{
-    color: black;
+    
     position: relative;
     font-size: 2rem;
 }

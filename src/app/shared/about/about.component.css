@@ -3,9 +3,10 @@ ul{
     list-style-type: none;
     margin-top:1rem;
 }
-li{
-    margin:0.2rem;
+.center > p{
+    color:tomato;
 }
+
 .center{
     width:100%;
     text-align: center;
@@ -15,17 +16,15 @@ li{
 .profile-img{
     background-image: url("/assets/Elias-vitor.png");
     background-size: contain;
-
     width: 320px;
     height: 320px;
     border: outset 10px  tomato;
     
-    border-color: repeating-radial-gradient(circle farthest-side at 50% 50%, #f3f1f1 0%, black 80%);
     
 }
-li > .modal-show{
-    width: 37px;
-    height: 37px;
+li > .button-primary-circle{
+    width: 35px;
+    height: 35px;
     border-style: none;
     border-radius: 50%;
     
