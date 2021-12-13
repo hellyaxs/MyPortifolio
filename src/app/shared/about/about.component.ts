@@ -9,6 +9,7 @@ export class AboutComponent implements OnInit {
 
   skills:String[]= ['javascript','java','php','CSS','HTML'];
   
+
   constructor() { }
 
   ngOnInit(): void {

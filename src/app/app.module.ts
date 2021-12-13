@@ -26,7 +26,7 @@ import { ContactComponent } from './shared/contact/contact.component';
     BrowserModule,
     RouterModule,
     RouterModule.forRoot([
-   
+      { path:'', redirectTo:'home', pathMatch:'full'},
       { path:'home' , component:HomeComponent},
       { path:'about' , component:AboutComponent},
       { path:'contact', component:ContactComponent}

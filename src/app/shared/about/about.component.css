@@ -22,10 +22,4 @@ ul{
     
     
 }
-li > .button-primary-circle{
-    width: 35px;
-    height: 35px;
-    border-style: none;
-    border-radius: 50%;
-    
-}
+

@@ -22,14 +22,14 @@ export class ThemeComponent implements OnInit {
   
   
   swicthTheme(){
-    this.document.body.classList.replace(this.theme,this.theme ==='theme-Light'
+    this.document.body.classList.replace(this.theme,this.theme === 'theme-Light'
     ? (this.theme ='theme-Dark')
     :(this.theme ='theme-Light'))
 
     if(this.theme==='theme-Light'){
-      this.icon ='bi bi-brightness-high-fill';
+      this.icon = 'bi bi-brightness-high-fill';
     }else{
-      this.icon= 'bi bi-moon-fill';
+      this.icon = 'bi bi-moon-fill';
     }
   }
 
