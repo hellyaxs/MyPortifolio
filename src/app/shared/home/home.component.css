@@ -18,6 +18,26 @@
 h1{
     font-size: 54px;
 }
+.triangle-bottom-left {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 0 50px;
+    border-color: transparent transparent transparent #0ad178;
+}
+.triangle-bottom-left::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position:relative;
+    bottom: 3.5rem;
+    transform:translateX(-2.8rem);
+    border-style: solid;
+    border-width: 50px 0 0 50px;
+    border-color: transparent transparent transparent #1df794;
+}
 
 .rotate-center {
     position:absolute;
