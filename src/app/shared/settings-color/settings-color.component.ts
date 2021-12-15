@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-settings-color',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsColorComponent implements OnInit {
 
-  colors:String[] = ['backgroud-color:tomato;'];
+  colors:String[] = ['tomato','pink','red'];
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: Document,
+                                private renderer: Renderer2) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  modalCores(){
+    
   }
 
 }

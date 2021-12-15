@@ -1,8 +1,5 @@
 
-.button-primary{
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
+.button-circle{
     position: absolute;
     top: 6rem;
     right: 1.3rem;
@@ -12,13 +9,13 @@
   
 }
 
-.button-primary:hover{
+.button-circle:hover{
     transform: rotate(0deg);
     transition: all linear 0.9s;
     
 }
-.button-primary:active{
-    transform: rotate(2);
+.button-circle:active{
+    
     transition: all linear 0.3s;
     
 }
@@ -30,7 +27,7 @@
    position: absolute;
    padding:0.6rem;
    top:6rem;
-   right: 3rem;
+   right: 4rem;
    width: 200px;
    height: 100px;
    display:none;
