@@ -16,7 +16,7 @@ export class SettingsColorComponent implements OnInit {
   ngOnInit(): void {}
 
   modalCores(){
-    
+   
   }
 
 }
