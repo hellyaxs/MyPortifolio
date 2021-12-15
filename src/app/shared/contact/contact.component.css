@@ -1,0 +1,17 @@
+.center > p{
+    color:tomato;
+    margin-bottom: 0rem;
+}
+
+.center{
+    width:100%;
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom: 3rem;
+}
+.card{
+    z-index:0.8;
+    width: 300px;
+    height: 150px;
+    background: rgb(184, 54, 54);
+}
