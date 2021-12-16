@@ -1,0 +1,20 @@
+<div class="tracking-in-expand">
+    <div class="center">
+        <p>MAIN INFO</p>
+        <h2>About me</h2>
+    </div>
+    
+<div class="row mx-auto mt-5" >
+    
+    <div class="col-sm-4" *ngFor="let card of card">
+        <div class="card">
+            <div class="icon"><i [class]="card.icon"></i></div>
+            <div class="card-title">{{card.title}}</div>
+            <div class="card-text">
+                <p>{{card.contect}}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>

@@ -4,14 +4,21 @@
     top: 6rem;
     right: 1.3rem;
     z-index: 1;
+    
+}
+i{
+    display:block;
     transform: rotate(360deg);
-    transition: all linear 0.9s;
-  
+    transition: all linear 1s;
+}
+i:hover{
+    transform: rotate(0deg);
+    transition: all linear 1s;
 }
 
+
 .button-circle:hover{
-    transform: rotate(0deg);
-    transition: all linear 0.9s;
+   
     
 }
 

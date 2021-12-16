@@ -11,6 +11,7 @@ import { ThemeComponent } from './shared/theme/theme.component';
 
 import { AboutComponent } from './shared/about/about.component';
 import { ServicosComponent } from './shared/servicos/servicos.component';
+import { ContactComponent } from './shared/contact/contact.component';
 
 
 @NgModule({
@@ -22,16 +23,18 @@ import { ServicosComponent } from './shared/servicos/servicos.component';
     ThemeComponent,
     AboutComponent,
     ServicosComponent,
+    ContactComponent,
   
   ],
   imports: [
     BrowserModule,
     RouterModule,
     RouterModule.forRoot([
-      { path:'', redirectTo:'home', pathMatch:'full'},
-      { path:'home' , component:HomeComponent},
-      { path:'about' , component:AboutComponent},
-      { path:'services', component:ServicosComponent}
+      { path:'', redirectTo:'home', pathMatch:'full' },
+      { path:'home' , component:HomeComponent },
+      { path:'about' , component:AboutComponent },
+      { path:'services', component:ServicosComponent },
+      { path:'contact', component:ContactComponent }
   
     ])
    

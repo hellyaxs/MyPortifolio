@@ -3,17 +3,7 @@ ul{
     list-style-type: none;
     margin-top:1rem;
 }
-.center > p{
-    color:tomato;
-    margin-bottom: 0rem;
-}
 
-.center{
-    width:100%;
-    text-align: center;
-    margin-top:2rem;
-    margin-bottom: 3rem;
-}
 .profile-img{
     background-image: url("/assets/Elias-vitor.png");
     background-size: contain;

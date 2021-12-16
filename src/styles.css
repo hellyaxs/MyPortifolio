@@ -92,11 +92,13 @@ p{
     background-color: #2e2e2e;
     color:azure;
     --backgroudvar:#2e2e2e;
-    --button-background: #242424;
-    --button-box-shadow:  5px 5px 5px #121212, -5px -5px 5px #4a4a4a;
+    --button-background: linear-gradient(145deg, #272727, #202020);;
+    --button-box-shadow:  5px 5px 5px #121212;
     --color:azure;
     --button-box-shadow-hover: 29px 29px 16px #0e0e0e,-29px -29px 16px #3a3636;
     --color-p:rgb(146, 145, 145);
+    --card-icon: inset 9px 9px 7px #101010,
+    inset -9px -9px 7px #383838;
     transform: scale(1);
     transition: all linear 0.4s;
     
@@ -106,11 +108,12 @@ p{
     color:black;
     --button-background: linear-gradient(145deg, #e6e6e6, #ffffff);
     --backgroudvar:rgb(224, 224, 224);
-    --button-box-shadow:  5px 5px 10px #cfcfcf,-5px -5px 10px #ffffff;
+    --button-box-shadow: 5px 5px 10px #afafaf;
     --color:black;
     --button-background-hover:linear-gradient(145deg, #ffffff, #e6e6e6);
     --button-box-shadow-hover: 5px 5px 10px #cfcfcf,-5px -5px 10px #ffffff;
     --color-p:rgba(78, 78, 78, 0.692);
+    --card-icon:inset 5px 5px 7px #898989,inset -5px -5px 7px #ffffff;
      transform: scale(1);
      transition: all linear 0.4s;
     
@@ -277,4 +280,43 @@ p{
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
+}
+.center > p{
+    color:tomato;
+    margin-bottom: 0rem;
+}
+
+.center{
+    width:100%;
+    text-align: center;
+    margin-top:2rem;
+    margin-bottom: 3rem;
+}
+.card{
+    width: 20rem;
+    height: 15rem;
+    background: var(--button-background);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: var(--button-box-shadow);
+    
+}
+.card-title{
+    font-size: larger;
+    font-weight: 600;
+}
+.card-icon{
+    width: 3rem;
+    height:3rem;
+    margin: 1rem 0rem ;
+    border-radius: 50%;
+    box-shadow: var(--card-icon);
+    
+}
+.card-icon > i{
+   font-size: 2rem;
 }

@@ -3,10 +3,18 @@
         <p>Services</p>
         <h2>What I Do</h2>
     </div>
+
+<div class="row mx-auto mt-5">
+   
+    <div class="col-sm-4" *ngFor="let conteudo of conteudo">
+        <div class="card">
+            <div class="card-icon"><i [class]="conteudo.icon"></i></div>
+            <div class="card-title">{{conteudo.title}}</div>
+            <div class="card-text">
+                <p>{{conteudo.contect}}</p>
+            </div>
+        </div>
+    </div>
+ 
 </div>
-<div class="row mx-auto mt-5 tracking-in-expand">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-3 mx-2 card"></div>
-    <div class="col-sm-3 me-2 card"></div>
-    <div class="col-sm-3 card"></div>
 </div>
