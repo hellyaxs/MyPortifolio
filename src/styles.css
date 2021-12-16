@@ -125,7 +125,7 @@ p{
     height:100vh;
     align-items: center;
     display: flex;
-    z-index: 0.9;
+    z-index: 1;
     overflow: hidden;
     background-color:var(--backgroudvar);  
     
@@ -135,6 +135,7 @@ p{
     background: var(--button-background);
     box-shadow:   var(--button-box-shadow);
     transition: all linear 300ms;
+    z-index: 2;
 }
 .circle-in-circle{
     position: absolute;

@@ -21,7 +21,6 @@ input[type="checkbox"]:not(:checked) ~.wapper{
     position: absolute;
     top: 0.6rem;
     right: 5rem;
-    z-index: 1;
     cursor: pointer;
        
 }
