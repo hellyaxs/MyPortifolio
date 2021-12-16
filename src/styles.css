@@ -321,3 +321,28 @@ p{
 .card-icon > i{
    font-size: 2rem;
 }
+form{
+    width: 50%;
+    height: 200px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 7rem;
+    
+}
+input{
+    width: 80%;
+    height:50px;
+    border-radius: 5rem;
+    border-style: none;
+    padding:1rem;
+    background: var(--button-background);
+    box-shadow: var(--button-box-shadow);
+    color:var(--color);
+    border: none;
+}
+textarea{
+    background: var(--button-background);
+    box-shadow: var(--button-box-shadow);
+    border-style: none;
+    color:var(--color);
+}
