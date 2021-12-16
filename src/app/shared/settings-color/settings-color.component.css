@@ -21,7 +21,7 @@
 .modal-colores{
 
    position: absolute;
-   padding:0.6rem;
+   padding:1rem;
    top:6rem;
    right: 4rem;
    width: 200px;
@@ -37,11 +37,12 @@
 }
 
 .colors{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     display:flex;
     background: #000;
+    margin: 2px 2px;
 }
 @keyframes bounce-in-right {
     0% {

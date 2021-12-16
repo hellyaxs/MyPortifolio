@@ -10,8 +10,8 @@
     margin-bottom: 3rem;
 }
 .card{
-    z-index:0.8;
-    width: 300px;
-    height: 150px;
-    background: rgb(184, 54, 54);
+    z-index:0.5;
+    width: 17rem;
+    height: 8rem;
+    background-color: burlywood;
 }

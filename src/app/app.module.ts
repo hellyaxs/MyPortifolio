@@ -10,7 +10,8 @@ import { SettingsColorComponent } from './shared/settings-color/settings-color.c
 import { ThemeComponent } from './shared/theme/theme.component';
 
 import { AboutComponent } from './shared/about/about.component';
-import { ContactComponent } from './shared/contact/contact.component';
+import { ServicosComponent } from './shared/servicos/servicos.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './shared/contact/contact.component';
     SettingsColorComponent,
     ThemeComponent,
     AboutComponent,
-    ContactComponent
+    ServicosComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { ContactComponent } from './shared/contact/contact.component';
       { path:'', redirectTo:'home', pathMatch:'full'},
       { path:'home' , component:HomeComponent},
       { path:'about' , component:AboutComponent},
-      { path:'contact', component:ContactComponent}
+      { path:'services', component:ServicosComponent}
+  
     ])
    
   ],
