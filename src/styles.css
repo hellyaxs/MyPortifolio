@@ -350,3 +350,7 @@ textarea{
     border-style: none;
     color:var(--color);
 }
+.skills{
+        background:var(--backgroudvar);
+        box-shadow: var(--card-icon);
+}

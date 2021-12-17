@@ -11,8 +11,9 @@ input[type="checkbox"]:checked ~.modal-colores{
 }
 input[type="checkbox"]:not(:checked) ~.modal-colores{
 
-    animation: bounce-in-right 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) reverse both;
-    display: none;   
+    display: none; 
+    transition: all linear 1.1s;
+    animation: bounce-in-right 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) reverse both;   
 }
 
 .button-circle{
@@ -58,7 +59,13 @@ i:hover{
     width: 30px;
     border-radius: 50%;
     display:flex;
+    cursor: pointer;
+    transition: all linear 200ms;
     
+}
+.colors:hover{
+        transform: scale(1.3);
+        transition: all linear 200ms;
 }
 @keyframes bounce-in-right {
     0% {

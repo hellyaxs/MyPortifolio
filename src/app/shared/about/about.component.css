@@ -16,12 +16,8 @@ ul{
     width: 33rem;
     height:15px;
     padding:5px;
-    background:rgb(224, 224, 224) ;
-    box-shadow: inset 5px 5px 8px #b1b1b1,
-            inset -5px -5px 8px #ffffff;
-
     border-radius: 2rem;
-    margin: 1.5rem;
+    margin: 0.7rem;
 }
 .skills-title{
     display: flex;
