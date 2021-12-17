@@ -16,7 +16,10 @@ export class SettingsColorComponent implements OnInit {
   ngOnInit(): void {}
 
   swicthColors(){
-    
+    this.renderer.addClass(this.document.getElementsByTagName('i'),'color');
+    this.renderer.removeStyle('i','background')
+    this.renderer.setStyle('i','background',this.colors[1]);
+    console.log('cor mudarda');
   }
 
 }
