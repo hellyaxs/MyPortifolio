@@ -8,7 +8,7 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 })
 export class SettingsColorComponent implements OnInit {
 
-  colors:String[] = ['tomato','pink','red'];
+  colors:String[] = ['tomato','#fb839e','#cc3a3b','#1fc586','#ec9412'];
 
   constructor(@Inject(DOCUMENT) private document: Document,
                                 private renderer: Renderer2) {}

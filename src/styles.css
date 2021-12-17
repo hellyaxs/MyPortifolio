@@ -130,6 +130,10 @@ p{
     background-color:var(--backgroudvar);  
     
 }
+.modal-colores{
+    background:var(--button-background);
+    box-shadow:var(--button-box-shadow);
+}
 .modal-show{
   
     background: var(--button-background);

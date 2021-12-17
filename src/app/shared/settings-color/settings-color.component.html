@@ -1,8 +1,8 @@
-<button class="button-circle"(click)="modalCores()" id="Mymodal"><i class="bi bi-gear-fill"></i></button>
 
+<input type="checkbox" name="" id="label-cor">
+<label for="label-cor" class="button-circle"><i class="bi bi-gear-fill"></i></label>
 <div class="modal-colores">
-    <div class="container" *ngFor="let colors of colors">
-        <label class="colors" [style]="colors"></label>
+    <div class="caixa" *ngFor="let colors of colors">
+        <label class="colors" [style]="colors" [ngStyle]="{'background': colors}"></label>
     </div>
-   
 </div>
