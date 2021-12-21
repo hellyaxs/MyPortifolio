@@ -6,7 +6,7 @@
 
     <div class="row">
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 container-fluid">
             <div class="profile-img"></div>
    
                 <ul class="redes-socias">
@@ -17,7 +17,7 @@
                     </li>
                 </ul>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 container-fluid">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolorem saepe? Itaque qui a non
                 facilis sint, perferendis autem maiores similique cumque consequuntur laudantium ducimus hic ipsum
                 expedita pariatur blanditiis!
@@ -34,13 +34,13 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row container-xxl">
         <div class="col-sm-6" *ngFor="let skills of skills">
             <div class="skills-title">
                 <p>{{skills.icon}}</p>
                  <span class="skills-progresso" [ngStyle]="{'left.%':skills.link}"><p>{{skills.link}}%</p></span>
             </div>
-            <div class="skills">
+            <div class="skills container-fluid">
                 <span class="porcento scale-up-hor-left" [ngStyle]="{'width.%': skills.link}"></span>
             </div>
         </div>

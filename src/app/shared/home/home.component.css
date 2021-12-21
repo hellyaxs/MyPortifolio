@@ -98,3 +98,17 @@ h1{
               transform: rotate(360deg);
     }
   }
+  .spacing{
+    margin-top: 140px;
+} 
+  @media (max-width:1280px) {
+      .Pontilhismo{
+          opacity: 0;
+      }
+     
+  }
+ @media (max-width:600px){
+    .spacing{
+        margin-top: 10px;
+    } 
+ }

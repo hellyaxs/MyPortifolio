@@ -78,6 +78,10 @@ a{
   font-family: 'Source Sans 3', 'Arial Narrow', Arial, sans-serif;
   list-style-type: none;
   z-index:0.5;
+  
+}
+body{
+        height:100vh;
 }
 
 i.bi{

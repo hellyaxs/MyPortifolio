@@ -15,13 +15,16 @@ input[type="checkbox"]:not(:checked) ~.modal-colores{
     transition: all linear 1.1s;
     animation: bounce-in-right 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) reverse both;   
 }
-
+.stick{
+        position: sticky;
+        left: 98%;
+        top: 5.6rem;
+        z-index: 1;
+}
 .button-circle{
-    position: absolute;
-    top: 6rem;
-    right: 1.3rem;
-    z-index: 1;
+    position:absolute;
     padding:6px;
+    right: 1.3rem;
     
 }
 i{
@@ -39,7 +42,6 @@ i:hover{
 
    position: absolute;
    padding:12px 12px 12px 12px;
-   top:5.6rem;
    right: 4.4rem;
    width: 200px;
    height: 50px;
