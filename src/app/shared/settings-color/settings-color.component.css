@@ -21,7 +21,7 @@ input[type="checkbox"]:not(:checked) ~.modal-colores{
     padding:6px;
     top:6rem;
     right: 1.4rem;
-    
+    z-index: 1;
 }
 i{
     margin-left:4px;
