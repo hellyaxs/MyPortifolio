@@ -2,9 +2,9 @@
     width: 37px;
     height: 37px;
     border-radius: 50%;
-    position: sticky;
+    position: absolute;
     top: 9rem;
-    left: 96%;
+    right: 1.3rem;
     z-index: 1;
    
     

@@ -12,6 +12,17 @@ ul{
     border: outset 10px  tomato;
      
 }
+
+  .button-cv{
+    display: flex;
+  }
+  @media (max-width:1200px){
+    .button-cv{
+      display: block;
+    }
+  }
+
+
 .skills{
     
     height:15px;

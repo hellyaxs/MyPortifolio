@@ -19,7 +19,7 @@ input[type="checkbox"]:not(:checked) ~.wapper{
     height: 48px;
     border-radius: 50%;
     position: absolute;
-    top: 0.6rem;
+    top: 0.2rem;
     right: 5rem;
     cursor: pointer;  
 }
