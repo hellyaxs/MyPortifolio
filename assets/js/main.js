@@ -54,30 +54,76 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
 })
+/*============== skilss ==============*/
+const skills = [{ 
+                "title":"HTML",
+                "experiencia":"2 anos",
+                "src":"assets/images/html-card.webp",
+                "alt":"html",
+                "class":"circle",
+                "descrition":"HTML é uma linguagem de marcação utilizada na construção de páginas na Web."
+              },
+              { 
+                "title":"CSS",
+                "experiencia":"2 anos",
+                "src":"assets/images/css-card.webp",
+                "alt":"css",
+                "class":"circle circle1",
+                "descrition":"O CSS é uma linguagem de folhas de estilos, criada com o propósito de estilizar as páginas HTML."
+              },
+              { 
+                "title":"JavaScript",
+                "experiencia":"2 anos",
+                "src":"assets/images/js-card.webp",
+                "alt":"js",
+                "class":"circle circle2",
+                "descrition":"JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma."
+              },
+              { 
+                "title":"Angular",
+                "experiencia":"1 ano",
+                "src":"assets/images/angular.svg",
+                "alt":"ts",
+                "class":"circle circle5",
+                "descrition":"FrameWork JavaScript desenvolvido pelo Google para construir SPAs organizada em Compomentes."
+              },
+              { 
+                "title":"Spring Boot",
+                "experiencia":"6 meses",
+                "src":"assets/images/spring-boot.svg",
+                "alt":"react",
+                "class":"circle circle4",
+                "descrition":"FrameWork java para construir APIs REST, faz parte do ecossistema Spring  que possui um conjunto de ferramentas para desenvolver aplicações Web."
+              },
+              { 
+                "title":"Git",
+                "experiencia":"2 anos",
+                "src":"assets/images/git-card.webp",
+                "alt":"git",
+                "class":"circle circle3",
+                "descrition":"Um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir."
+              },
+            ]
+  skills.forEach(function (skills) {
+    document.getElementById("conteudo").innerHTML+= `
+        <div class="skills_card delaySmallReveal" id="card">
+          <span class="`+skills.alt+` card-border"></span>
+          <div class="`+skills.class+`">
+            <img class="skills_img" src="`+skills.src+`" alt="`+skills.alt+`">
+          </div>
+          
+          <h3 class="card_title">`+skills.title+`</h3>  
+          <h4 class="card_subtitle">`+skills.experiencia+`</h4>
+          
+             <p class="card_description">
+              `+skills.descrition+` 
+            </p>
+        </div>`
+  })
+            
 
 
-/*==================== PORTFOLIO MODAL ====================*/
-const modalViews = document.querySelectorAll('.portfolios_modal'),
-      modalBtns = document.querySelectorAll('.portfolios_button'),
-      modalCloses = document.querySelectorAll('.portfolios_modal-close')
-    
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
 
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () =>{
-        modal(i)
-    })
-})
-
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) =>{
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
 
 
 /*==================== QUALIFICATION ====================*/
