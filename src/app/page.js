@@ -7,13 +7,34 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   
- 
+  const [isdark,setIsDark] = useState(false);
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('selected-theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+      if (savedTheme === 'light') {
+        document.body.classList.add('sun-theme');
+      } else {
+        document.body.classList.remove('sun-theme');
+      }
+    }
+  }, []);
 
- 
- function openTab(openTab) {
-     setOpen(openTab)
- }
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+
+    if (newTheme === 'light') {
+      document.body.classList.add('sun-theme');
+    } else {
+      document.body.classList.remove('sun-theme');
+    }
+
+    localStorage.setItem('selected-theme', newTheme);
+  };
+
 
   return (
     <>
@@ -47,8 +68,8 @@ export default function Home() {
     </div>
     
     <div className="nav_btns"> 
-      {/* <!-- Theme change button --> */}
-      <i className="uil uil-moon change-theme uil-sun" id="theme-button"></i>
+      {/* <!-- Theme change button --> */} 
+      <i className={`uil ${theme === 'light' ? 'uil-moon' : 'uil-sun'} theme-button`}  style={{ fontSize: '24px' }} onClick={toggleTheme}></i>
       
       <div className="nav_toggle" id="nav-toggle">
         <i className="uil uil-bars"></i>
@@ -259,7 +280,7 @@ export default function Home() {
   <div className="footer_divider"></div>
   {/* <!--================== FOOTER ========================--> */}
   <footer className="footer">
-          <p className="footer_copy">&#169; 2022 Elias Vitor <i className="uil bi-laptop pont"></i></p>
+          <p className="footer_copy">&#169; 2024 Elias Vitor <i className="uil bi-laptop pont"></i></p>
   </footer>
 
   {/* <!--================== SCROLL TOP ====================--> */}
