@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image";
 import Skins from "./skins";
-import Header from "./components/Header";
 import Github from "./github_projects";
 import { useEffect, useState } from 'react';
 
