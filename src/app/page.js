@@ -80,7 +80,7 @@ export default function Home() {
     
     <div className="nav_btns"> 
       {/* <!-- Theme change button --> */} 
-      <i className={`uil ${theme === 'light' ? 'uil-moon' : 'uil-sun'} theme-button`}  style={{ fontSize: '24px' }} onClick={toggleTheme}></i>
+      <i className={`uil ${theme === 'light' ? 'uil-moon' : 'uil-sun'} change-theme`}  style={{ fontSize: '24px' }} onClick={toggleTheme}></i>
       
       <div className="nav_toggle" onClick={toggleMenu} id="nav-toggle">
         <i className="uil uil-bars"></i>
