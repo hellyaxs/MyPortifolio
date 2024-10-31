@@ -7,7 +7,18 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
   
-  const [isdark,setIsDark] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    document.getElementById('nav-menu').classList.toggle('show-menu');
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    document.getElementById('nav-menu').classList.toggle('show-menu');
+    setIsMenuOpen(false);
+  };
+
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState('light');
   useEffect(() => {
@@ -64,14 +75,14 @@ export default function Home() {
           <a href="#contact" className="nav_link"> Contato </a> 
         </li>
       </ul>
-      <i className="uil uil-times nav_close" id="nav-close"></i>
+      <i className="uil uil-times nav_close" onClick={closeMenu} id="nav-close"></i>
     </div>
     
     <div className="nav_btns"> 
       {/* <!-- Theme change button --> */} 
       <i className={`uil ${theme === 'light' ? 'uil-moon' : 'uil-sun'} theme-button`}  style={{ fontSize: '24px' }} onClick={toggleTheme}></i>
       
-      <div className="nav_toggle" id="nav-toggle">
+      <div className="nav_toggle" onClick={toggleMenu} id="nav-toggle">
         <i className="uil uil-bars"></i>
       </div>
     </div>   
