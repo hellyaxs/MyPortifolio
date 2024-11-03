@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import moment from 'moment';
-import { findAllRepos, fetchUserProfile } from './services/github_services';
+import { findAllRepos, fetchUserProfile } from '../services/github_services';
 
 export default function Github() {
     const [repos, setRepos] = useState([]);
