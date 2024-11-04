@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Title from "./utils/title";
+import { RevealWrapper }from  'next-reveal'
 
 export default function Skins() {
     const skills = [{ 
@@ -67,6 +68,7 @@ export default function Skins() {
     ]
 
     return (
+      <RevealWrapper>
       <section className="skills section" id="skills">
         <Title subtitle={"skills"} title="Habilidades" icon="journal-bookmark-fill" />
   
@@ -82,5 +84,6 @@ export default function Skins() {
           ))}
         </div>
         </section>
+        </RevealWrapper>
       );
 }

@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Title from './utils/title';
+import { RevealWrapper }from  'next-reveal'
 
 export default function About() {
 
  return ( 
+    <RevealWrapper>
     <section className="-translate-x-20 pt-10 pb-16 px-0 mb-12 flex flex-col items-center text-center" id="about">
         <Title title="Sobre" subtitle="About" icon="person-circle" />
   
@@ -49,6 +51,7 @@ export default function About() {
         </div>
   
       </section>
+      </RevealWrapper>
   
     );
 }

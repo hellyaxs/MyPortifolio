@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import moment from 'moment';
 import { findAllRepos, fetchUserProfile } from '../services/github_services';
 import Title from './utils/title';
+import { RevealWrapper } from 'next-reveal';
 
 export default function Github() {
     const [repos, setRepos] = useState([]);
@@ -42,7 +43,7 @@ export default function Github() {
 
 
     return (
-     
+      <RevealWrapper>
       <section className="section_portfolio" id="portfolio">
       <Title title="Projetos" subtitle="Projects" icon="journal-code" />
         <div className="flex">
@@ -63,6 +64,7 @@ export default function Github() {
           ))}
         </div>
     </section>
+    </RevealWrapper>
     ) 
 
 }

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Title from './utils/title';
+import { RevealWrapper } from 'next-reveal';
 
 export default function Qualification() {
 
     const [open, setOpen] = useState(false);
 
     return (
+      <RevealWrapper>
         <section className="app-section qualification section">
         <div className="qualification_container container justify-center items-center"> 
           <Title subtitle={"qualifications"} title="Qualificações" icon={"mortarboard"} />
@@ -76,5 +78,6 @@ export default function Qualification() {
           </div>
           </div>
     </section>
+    </RevealWrapper>
     )
 }
