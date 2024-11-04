@@ -1,3 +1,4 @@
+"use strict";
 import { useEffect, useState } from 'react';
 import moment from 'moment';
 import { findAllRepos, fetchUserProfile } from '../services/github_services';
@@ -40,7 +41,11 @@ export default function Github() {
 
 
     return (
-        <div>
+     
+      <section className="section_portfolio" id="portfolio">
+      <h2 className="section_title">Projetos</h2>
+  
+  
         <div className="flex">
           {repos.map((repo) => (
             <div key={repo.id} className="card_content">
@@ -58,7 +63,7 @@ export default function Github() {
             </div>
           ))}
         </div>
-      </div>
-    )
+    </section>
+    ) 
 
 }

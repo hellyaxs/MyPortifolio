@@ -66,6 +66,8 @@ export default function Skins() {
     ]
 
     return (
+      <section className="skills section" id="skills">
+      <h2 className="section_title delaySmallReveal">Habilidades</h2>
         <div className="skills_container container grid">
           {skills.map((skill, index) => (
             <div className="skills_card"  key={index}>
@@ -78,5 +80,6 @@ export default function Skins() {
             </div>
           ))}
         </div>
+        </section>
       );
 }
