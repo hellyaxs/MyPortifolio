@@ -36,7 +36,7 @@ module.exports = {
       },
       fontSize: {
         'big': '2.3rem',
-        'h1': '2rem',
+        'h1': '3.4rem',
         'h2': '1.3rem',
         'h3': '1.125rem',
         'normal': '0.938rem',

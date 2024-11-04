@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             
             <div className="home_data">
-              <h1 className="home_title">Olá, sou <br />Elias Vitor</h1>
+              <h1 className="text-h1 font-semi-bold title-gradient">Olá, sou <br />Elias Vitor</h1>
               <h3 className="home_subtitle home_animation">Engenherio da Computação</h3>
               
               <a href="#portfolio" className="button_main">

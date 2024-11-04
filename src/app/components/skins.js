@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skins() {
     const skills = [{ 
-        "title":"JAVA",
+        "title":"Java",
         "src":"https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/java/java-original.svg",
         "alt":"html",
     
@@ -70,13 +70,12 @@ export default function Skins() {
       <h2 className="section_title delaySmallReveal">Habilidades</h2>
         <div className="skills_container container grid">
           {skills.map((skill, index) => (
-            <div className="skills_card"  key={index}>
+            <div className="skills_card" key={index}>
               <span className={`${skill.alt} card-border`}></span>
               <div className="circle">
-                <Image className="skills_img" width={60} height={60} src={skill.src} alt={skill.alt} />
-                <p >{skill.title}</p>
-              </div>
-              
+                <Image  width={60} height={60} src={skill.src} alt={skill.alt} />
+                <p className="mt-1 font-medium">{skill.title}</p>
+               </div>
             </div>
           ))}
         </div>
