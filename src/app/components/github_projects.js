@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import moment from 'moment';
 import { findAllRepos, fetchUserProfile } from '../services/github_services';
+import Title from './utils/title';
 
 export default function Github() {
     const [repos, setRepos] = useState([]);
@@ -43,9 +44,7 @@ export default function Github() {
     return (
      
       <section className="section_portfolio" id="portfolio">
-      <h2 className="section_title">Projetos</h2>
-  
-  
+      <Title title="Projetos" subtitle="Projects" icon="journal-code" />
         <div className="flex">
           {repos.map((repo) => (
             <div key={repo.id} className="card_content">

@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Title from './utils/title';
 
 export default function About() {
 
  return ( 
     <section className="-translate-x-20 pt-10 pb-16 px-0 mb-12 flex flex-col items-center text-center" id="about">
-        <h2 className="section_title">Sobre</h2>
+        <Title title="Sobre" subtitle="About" icon="person-circle" />
   
         <div className="sm:grid grid-cols-1 max-w-[1268px] shadow-2xl p-4 xl:grid-cols-2">
          <div className="about-content ">

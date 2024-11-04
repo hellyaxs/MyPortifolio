@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Title from "./utils/title";
 
 export default function Skins() {
     const skills = [{ 
@@ -67,7 +68,8 @@ export default function Skins() {
 
     return (
       <section className="skills section" id="skills">
-      <h2 className="section_title delaySmallReveal">Habilidades</h2>
+        <Title subtitle={"skills"} title="Habilidades" icon="journal-bookmark-fill" />
+  
         <div className="skills_container container grid">
           {skills.map((skill, index) => (
             <div className="skills_card" key={index}>

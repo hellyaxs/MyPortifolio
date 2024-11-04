@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -37,7 +38,7 @@ module.exports = {
       fontSize: {
         'big': '2.3rem',
         'h1': '3.4rem',
-        'h2': '1.3rem',
+        'h2': '3rem',
         'h3': '1.125rem',
         'normal': '0.938rem',
         'small': '0.813rem',
@@ -50,5 +51,15 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.text-gradient': {
+          'background-image': 'linear-gradient(45deg, #35ce8d 0%, #FFFB7D 100%)',
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+        },
+      })
+    }),
+  ],
 };

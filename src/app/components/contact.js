@@ -1,9 +1,11 @@
+import Title from "./utils/title";
+
 export default function Contact() {
 
     return (
 
     <section className="contact section" id="contact">
-    <h2 className="section_title ">Contato</h2>
+      <Title subtitle={"Contact"} title="Contato" icon={"link-45deg"} />
     
     <div className="contact_container container grid">
       <div className="div_contact">

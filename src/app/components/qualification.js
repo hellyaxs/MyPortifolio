@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Title from './utils/title';
 
 export default function Qualification() {
 
@@ -6,8 +7,9 @@ export default function Qualification() {
 
     return (
         <section className="app-section qualification section">
-        <div className="qualification_container container"> 
-          <h2 className="section_title">Qualificações</h2>
+        <div className="qualification_container container justify-center items-center"> 
+          <Title subtitle={"qualifications"} title="Qualificações" icon={"mortarboard"} />
+       
   
           <div className="tab-wrap">
             <div className="tab">

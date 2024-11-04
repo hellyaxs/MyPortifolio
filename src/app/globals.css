@@ -142,19 +142,6 @@ img {
 }
 
 
-.section_title {
-  font-size: var(--h1-font-size);
-  background-image: var(--subtitle-section-gradient);
-  font-weight: var(--font-semi-bold);
-  background-clip: text;
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent;
-  color: var(--title-color);
-  margin-bottom: var(--mb-3);
-  text-align: center;
-}
-
-
 .pont {
   color: var(--first-color);
 }
