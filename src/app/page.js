@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="main">
+      <main className="flex flex-col w-full justify-center items-center main">
         <Home />
         <About />
         <Skins />

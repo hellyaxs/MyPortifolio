@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
 
@@ -29,10 +30,28 @@ export default function Home() {
             </div>
             
             <div className="home_data">
-              <h1 className="text-h1 font-semi-bold title-gradient">Olá, sou <br />Elias Vitor</h1>
-              <h3 className="home_subtitle home_animation">Engenherio da Computação</h3>
+              <div className="block mb-1">
+               <span className="text-4xl font-medium">
+                Eleve seu Negocio <br /> digital a outro nivel
+                </span>
+                <h1 className="text-4xl font-semi-bold title-gradient">com um Full Stack de qualidade!!</h1>
+              </div>
+             
               
-              <a href="#portfolio" className="button_main">
+              <TypeAnimation
+                    sequence={[
+                      '👋🏻 Olá sou, Elias Vitor',
+                      1000,
+                      'Engenherio da Computação',
+                      1000, 
+                      '' 
+                    ]}
+                    speed={{type: 'keyStrokeDelayInMs', value: 250}}
+                    className="font-semibold text-xl"
+                    repeat={Infinity}
+                  />
+              <br />
+              <a href="#portfolio" className="button_main mt-5">
                 <b>Conheça meu portfólio</b> <i className="uil uil-message button_icon"></i>
               </a>
 
