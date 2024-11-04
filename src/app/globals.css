@@ -40,8 +40,7 @@
   --container-color: hsl(257, 10%, 5%);
   --qualification-bar-color: hsl(var(--hue-color), 92%, 85%);
   --qualification-color: hsl(var(--hue-color), 100%, 50%);
-  --scroll-thumb-color: hsl(var(--hue-color), 68%, 50%);
-  --scroll-bar-color: hsl(var(--hue-color), 10%, 15%);
+
 
   /*====== Font alt  ======*/
   --body-font: 'Poppins', sans-serif;
@@ -150,6 +149,16 @@ img {
   color: var(--text-color);
 }
 
+/* teste scroll up */
+.scrollToTopButton {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollToTopButton.visible {
+  opacity: 1;
+}
 /*================ LAYOUT =========================*/
 .container {
   max-width: 768px;
@@ -197,7 +206,7 @@ body.sun-theme {
   --container-color: hsl(var(--hue-color), 8%, 90%);
   --qualification-bar-color: hsl(var(--hue-color), 2%, 70%);
   --qualification-color: hsl(var(--hue-color), 100%, 42%);
-  --scroll-bar-color: hsl(var(--hue-color), 98%, 87%);
+
  
 }
 
@@ -1084,43 +1093,6 @@ body.sun-theme {
   color: var(--text-color);
 }
 
-/*========= SCROLL UP =========*/
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  background-color: var(--first-color);
-  opacity: 0.9;
-  padding: 0 0.3rem;
-  border-radius: 0.4rem;
-  z-index: var(--z-tooltip);
-  transition: 0.4s;
-}
-
-.scrollup:hover {
-  background-color: var(--first-color-alt);
-}
-
-.scroll_icon {
-  font-size: 1.7rem;
-  color: #fff;
-}
-
-/*========= SHOW SCROLL =========*/
-.show-scroll {
-  bottom: 3rem;
-}
-
-/*========= SCROLL BAR =========*/
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
-  border-radius: 0.7rem;
-}
 
 
 /*=============== MEDIA QUERIES =========================*/
