@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .title-gradient {
+    @apply bg-gradient-to-l from-[#FBAB7E] to-[#F7CE68] bg-clip-text text-transparent;
+  }
+  .subtitle-gradient {
+    @apply bg-gradient-to-r from-[#35ce8d] to-[#FFFB7D] bg-clip-text text-transparent;
+  }
+}
 /*============ GOOGLE FONTS ===============*/
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
 
@@ -178,6 +186,7 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--header-color);
 }
+
 
 /*================ DARK / LIGHT =========================*/
 /*===== Variables =======*/
