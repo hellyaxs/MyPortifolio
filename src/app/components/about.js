@@ -6,11 +6,11 @@ export default function About() {
 
  return ( 
     <RevealWrapper>
-    <section className="-translate-x-20 pt-10 pb-16 px-0 mb-12 flex flex-col items-center text-center" id="about">
+    <section className="-translate-x-20 mt-2 pt-10 pb-16 px-0 mb-12 flex flex-col items-center text-center" id="about">
         <Title title="Sobre" subtitle="About" icon="person-circle" />
   
         <div className="sm:grid grid-cols-1 max-w-[1268px] shadow-2xl p-4 xl:grid-cols-2">
-         <div className="about-content ">
+         <div className="flex flex-col ">
           <Image src="/assets/images/profile.jpeg" width={320} height={320} alt="minha foto de perfil" id="about-img" className="about_img" />
   
           <div className="about_social">

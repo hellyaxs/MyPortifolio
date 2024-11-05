@@ -5,7 +5,7 @@ export default function Title({ title, subtitle,icon }) {
         <i className={`bi bi-${icon}`}></i> 
          {subtitle}
          </h2>
-        <h2 className="text-h2 font-semi-bold mb-3 text-center text-gradient">{title}</h2>
+        <h2 className="text-h2 font-semi-bold mb-2 text-center text-gradient">{title}</h2>
    </div>
     );
 }

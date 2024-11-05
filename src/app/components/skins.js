@@ -2,6 +2,7 @@ import Image from "next/image";
 import Title from "./utils/title";
 import { RevealWrapper }from  'next-reveal'
 
+
 export default function Skins() {
     const skills = [{ 
         "title":"Java",
@@ -83,7 +84,9 @@ export default function Skins() {
             </div>
           ))}
         </div>
+       
         </section>
+        
         </RevealWrapper>
       );
 }

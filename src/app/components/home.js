@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Home() {
 
     return (
-        <section className="home section home_section" id="home">
+        <section className="section mt-24 " id="home">
         <div className="home_container container grid">
           <div className="home_content grid">
 
@@ -22,9 +22,9 @@ export default function Home() {
                 <Image src="/assets/images/people-home.webp" width={300} height={300} alt="pessoa no computador" />
               
               <div className="home_icon">
-                <Image src="/assets/images/home_html.webp" className="icon-one" width={50} height={50} alt="icone html" />
-                <Image src="/assets/images/home_css.webp" className="icon-two" width={50} height={50}  alt="icone css" />
-                <Image src="/assets/images/home_js.webp" className="icon-three" width={50} height={50} alt="icone js" />
+                <Image src="/assets/images/spring-original.svg" className="icon-one" width={40} height={40} alt="icone spring boot" />
+                <Image src="/assets/images/typescript-plain.svg" className="icon-two" width={40} height={40}  alt="icone typescript" />
+                <Image src="/assets/images/flutter-original.svg" className="icon-three" width={40} height={40} alt="icone flutter" />
               </div>
             </div>
             </div>

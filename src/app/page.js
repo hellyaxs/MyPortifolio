@@ -1,6 +1,7 @@
 "use client"
 import About from "./components/about"; 
 import Skins from "./components/skins";
+import Image from "next/image";
 import Github from "./components/github_projects";
 import Header from "./components/header";
 import Contact from "./components/contact";
@@ -9,6 +10,8 @@ import Qualification from "./components/qualification";
 import Home from "./components/home";
 import { useEffect, useState } from 'react';
 import { IoIosArrowRoundUp } from 'react-icons/io';
+import Marquee from "react-fast-marquee";
+import { imagens } from "./components/utils/icons-LP";
 
 export default function Page() {
 
@@ -47,7 +50,15 @@ export default function Page() {
         <Home />
         <About />
         <Skins />
+        <Marquee>
+        {Object.entries(imagens).map(([name, url]) => (
+          <Image className="mx-3 filter grayscale hover:filter-none"
+           key={name} src={url} alt={name} width={54} height={54}  />
+        ))}
+        </Marquee>
+        <div className="w-full h-1 relative -top-7 shadow-lg" />
         <Qualification />
+
         <Github />    
         <Contact /> 
       </main>
@@ -55,7 +66,16 @@ export default function Page() {
       {isVisible &&
       (
       <button
-        className={`fixed bottom-0 right-0 bg-amber-500 rounded-lg  mr-8 mb-[71px] z-50 items-center text-xl flex gap-2`}
+        className={`
+        fixed bottom-0 right-0 bg-amber-500 rounded-lg mr-8 mb-[71px] z-50 
+        items-center text-xl flex gap-2 
+        transition-transform transform 
+        duration-300 ease-in-out
+        scale-0 translate-y-5
+        animate-[fadeInUp_0.5s_ease-in-out] 
+        ${isVisible ? 'scale-100 translate-y-0' : 'scale-0'}
+        hover:scale-110
+    `}
         onClick={scrollToTop}
       >
         <IoIosArrowRoundUp className="inline-block h-12 w-10" />
