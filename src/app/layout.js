@@ -13,12 +13,10 @@ export default function RootLayout({ children }) {
         <meta name="author" content="Elias Vitor"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#0a0eff"/>
-      
         <title>Elias Vitor | Engenherio da Computação </title>
         <meta name="description" content={metadata.description} />
         <link rel="stylesheet"href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"></link>
         <link rel="icon" href="assets/images/logo.ico" />
        </head>

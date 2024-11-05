@@ -115,8 +115,7 @@ h1 {
 }
 
 h2,
-h3,
-h4 {
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -219,6 +218,99 @@ body.sun-theme {
 
  
 }
+.cubo {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.cubo .stage-cube-cont {
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .cubo .stage-cube-cont {
+    left: 3rem;
+  }
+}
+
+.cubo .cubespinner {
+  animation: spincube 13s ease-in-out infinite;
+  transform-style: preserve-3d;
+  transform-origin: 50px 50px 0;
+  margin-left: calc(50% - 50px);
+}
+
+.cubo .cubespinner:hover {
+  animation-play-state: paused;
+}
+
+.cubo .cubespinner img {
+  width: 4rem;
+}
+
+.cubo .cubespinner div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #1e1e25;
+  background: rgba(1, 1, 1, 0.9);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cubo .cubespinner .face1 {
+  transform: translateZ(50px);
+}
+
+.cubo .cubespinner .face2 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+}
+
+.cubo .cubespinner .face3 {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.cubo .cubespinner .face3 img {
+  transform: rotate(-90deg);
+}
+
+.cubo .cubespinner .face4 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+}
+
+.cubo .cubespinner .face5 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+}
+
+.cubo .cubespinner .face6 {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateX(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+
 
 /*============== LIGHT BUTTON ===============*/
 .nav_btns {
