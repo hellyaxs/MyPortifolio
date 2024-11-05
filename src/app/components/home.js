@@ -32,7 +32,7 @@ export default function Home() {
             <div className="home_data">
               <div className="block mb-1">
                <span className="text-4xl font-medium">
-                Eleve seu Negocio <br /> digital a outro nivel
+                Eleve seu Negócio <br /> digital a outro nível
                 </span>
                 <h1 className="text-4xl font-semi-bold title-gradient">com um Full Stack de qualidade!!</h1>
               </div>
