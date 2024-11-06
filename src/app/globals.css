@@ -626,7 +626,7 @@ body.sun-theme {
 
 .skills_card {
   position: relative;
-  width: 12rem;
+  width: 10rem;
   height: 10rem;
   margin: var(--mb-0-5);
   border-radius: 25px;
@@ -1192,6 +1192,7 @@ body.sun-theme {
   .portfolios_container {
     transform: translateX(6rem);
     grid-template-columns: repeat(2, 1fr);
+  
   }
   
    .description-content{
@@ -1522,7 +1523,7 @@ body.sun-theme {
 
 
   .skills_card {
-    width: 11rem;
+    width: 10rem;
   }
 
 

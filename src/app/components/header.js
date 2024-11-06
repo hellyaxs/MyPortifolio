@@ -42,8 +42,8 @@ export default function Header() {
 
     return (
         <header className="header bg-black" id="header">
-        <nav className="nav container relative -left-4 sm:-left-0">
-          <a href="#" className="nav_logo"><span className="logo_cor">[</span>Elias<span className="logo_cor">]</span></a>
+        <nav className="nav container">
+          <a href="#" className="nav_logo"><span className="logo_cor">{`{`}</span>Elias<span className="logo_cor">{`}`}</span></a>
           <div className="nav_menu" id="nav-menu">
               <ul className="nav_list grid">
     

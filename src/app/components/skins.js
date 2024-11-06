@@ -73,7 +73,7 @@ export default function Skins() {
       <section className="my-40 pt-10 pb-16 px-0 mb-12 text-center" id="skills">
         <Title subtitle={"skills"} title="Habilidades" icon="journal-bookmark-fill" />
   
-        <div className="justify-center items-center w-1/2 sm:translate-x-24 sm:grid sm:grid-cols-2 md:translate-x-8 md:grid-cols-3 md:gap-2 lg:-translate-x-5 lg:grid-cols-4 container grid">
+        <div className="w-full grid-cols-2  sm:translate-x-20 sm:grid sm:grid-cols-2 sm:gap-1  md:grid-cols-3 md:gap-8 lg:-translate-x-5 lg:grid-cols-4 container grid">
           {skills.map((skill, index) => (
             <div className="skills_card" key={index}>
               <span className={`${skill.alt} card-border`}></span>

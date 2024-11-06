@@ -16,14 +16,12 @@ export default function Page() {
   return (
     <>
       <Header />
-      
         <Home  />
         <About />
         <Skins />
         <MarqueeDev />
         <Projects /> 
         <Qualification />
-
         {/* <Github />   */}
         <Contact /> 
       <Footer />

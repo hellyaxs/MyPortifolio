@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="assets/images/logo.ico" />
        </head>
       <body
-        className={`font-body antialiased overflow-x-hidden`}
+        className={`font-body antialiased overflow-x-hidden `}
       >
         {children}
       </body>
