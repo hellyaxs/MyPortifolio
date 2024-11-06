@@ -6,7 +6,7 @@ import { imagens } from './icons-LP'
 export default function AllProjects({ title }) {
   return (
     <>
-      <div className="mt-24 relative left-36 flex items-center w-screen max-w-[600px] h-auto rounded-[15px] bg-dark border dark:border-blue-900">
+      <div className="mt-24 flex items-center w-screen max-w-[600px] h-auto rounded-[15px] bg-dark border dark:border-blue-900">
         <div className="flex flex-col py-8 justify-start mr-10 items-center">
         <h4 className="font-black text-[1.8rem] mb-5 dark:text-emerald-600">{title}</h4>
           <Link href={'/projects'}>

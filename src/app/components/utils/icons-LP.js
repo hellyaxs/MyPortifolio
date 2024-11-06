@@ -27,5 +27,5 @@ export const imagens = {
     golang: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/go/go-original.svg",
     vscode: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/vscode/vscode-original.svg",
     nextjs: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nextjs/nextjs-original.svg",
-    mediapipe: "/assets/images/mediapipe.png",
+    mediapipe: "/assets/images/projects/mediapipe.png",
 }

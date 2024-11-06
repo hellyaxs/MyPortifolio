@@ -13,10 +13,10 @@ export default function Projects() {
       ];
     
       return (
-        <div className="text-white px-8" id="portfolio">
+        <div className="text-white px-8 justify-center items-center" id="portfolio">
             <Title title="Projetos" subtitle="Projects" icon="folder" />
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1068px]">
+          <div className="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1068px]">
             {projects.map((project) => (
               <div key={project.id} className="w-full rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
                 <Image src={project.image} width={500} height={600} alt={project.title} className="h-48 object-cover"  />
@@ -44,7 +44,7 @@ export default function Projects() {
               </div>
             ))}
           </div>
-          <AllProjects title="Todos os Projetos" />
+           <div className="hidden sm:flex justify-center xl:flex"><AllProjects  title="Todos os Projetos" /> </div>
         </div>
       );
 }

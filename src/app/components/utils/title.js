@@ -1,6 +1,6 @@
 export default function Title({ title, subtitle,icon }) {
     return (
-        <div className="">
+        <div>
         <h2 className="relative mx-auto top-2 text-6xl items-center font-semi-bold text-center text-gradient opacity-25">
         <i className={`bi bi-${icon}`}></i> 
          {subtitle}

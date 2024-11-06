@@ -41,8 +41,8 @@ export default function Header() {
       };
 
     return (
-        <header className="header" id="header">
-        <nav className="nav container">
+        <header className="header bg-black" id="header">
+        <nav className="nav container relative -left-4 sm:-left-0">
           <a href="#" className="nav_logo"><span className="logo_cor">[</span>Elias<span className="logo_cor">]</span></a>
           <div className="nav_menu" id="nav-menu">
               <ul className="nav_list grid">
@@ -73,7 +73,6 @@ export default function Header() {
         <div className="nav_btns"> 
           {/* <!-- Theme change button --> */} 
           <i className={`uil ${theme === 'light' ? 'uil-moon' : 'uil-sun'} change-theme`}  style={{ fontSize: '24px' }} onClick={toggleTheme}></i>
-          
           <div className="nav_toggle" onClick={toggleMenu} id="nav-toggle">
             <i className="uil uil-bars"></i>
           </div>

@@ -16,8 +16,8 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="flex flex-col w-full justify-center items-center main">
-        <Home />
+      
+        <Home  />
         <About />
         <Skins />
         <MarqueeDev />
@@ -26,7 +26,6 @@ export default function Page() {
 
         {/* <Github />   */}
         <Contact /> 
-      </main>
       <Footer />
       <ScrollUp />
     

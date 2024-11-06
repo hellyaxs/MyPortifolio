@@ -34,7 +34,7 @@ export default function ScrollUp() {
             (
             <button
               className={`
-              fixed bottom-0 right-0 bg-amber-500 rounded-lg mr-8 mb-[71px] z-50 
+              fixed bottom-0 right-0 bg-amber-500 rounded-lg mr-16 mb-[71px] z-50 
               items-center text-xl flex gap-2 
               transition-transform transform 
               duration-300 ease-in-out

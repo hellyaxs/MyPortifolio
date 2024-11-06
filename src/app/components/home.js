@@ -5,16 +5,13 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Home() {
 
     return (
-        <section className="section mt-24 " id="home">
+        <section className="section mt-24" id="home">
         <div className="home_container container grid">
           <div className="home_content grid">
 
             <div className="home_effect-wrap">
               <div className="effect effect-1"></div>
-              <div className="effect effect-3">
                 <div className="square"></div>
-                <div className="ball"></div>
-              </div>
             </div>
 
            <div className="home_desktop">
@@ -30,7 +27,7 @@ export default function Home() {
             </div>
             
             <div className="home_data">
-              <div className="block mb-1">
+              <div className="block mb-1 w-80 sm:w-full">
                <span className="text-4xl font-medium">
                 Eleve seu Negócio <br /> digital a outro nível
                 </span>

@@ -8,9 +8,9 @@ export default function Qualification() {
 
     return (
       <RevealWrapper>
-        <section className="app-section qualification section">
+        <section className="my-40 pt-10 pb-16 px-0 mb-12 text-center">
         <div className="qualification_container container justify-center items-center"> 
-          <Title subtitle={"qualifications"} title="Qualificações" icon={"mortarboard"} />
+          <Title subtitle={"training"} title="formação" icon={"mortarboard"} />
        
   
           <div className="tab-wrap">
