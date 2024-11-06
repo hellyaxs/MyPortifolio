@@ -11,7 +11,7 @@ export default function About() {
   
         <div className="sm:grid grid-cols-1 max-w-[1268px] mx-auto shadow-2xl p-4 xl:grid-cols-2">
          <div className="flex flex-col ">
-          <Image src="/assets/images/profile.jpeg" width={320} height={320} alt="minha foto de perfil" id="about-img" className="about_img" />
+          <Image src="/assets/images/profile.jpeg" width={320} height={320} alt="minha foto de perfil" id="about-img" className="about_img mx-auto" />
   
           <div className="about_social">
             <a href="https://www.linkedin.com/in/elias-vitordev" target="_blank" className="about_social-icon">

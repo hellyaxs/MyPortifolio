@@ -1,5 +1,3 @@
-import next from "next";
-
 export const imagens = {
     dart: "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/dart/dart-plain.svg",
     android:"https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/android/android-original.svg",
