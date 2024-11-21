@@ -11,6 +11,7 @@ export default function Projects() {
         { id: 3, title: 'API Rest - Nestjs',link:"https://github.com/hellyaxs/selecao-node-adasi-2024", description: 'Informações sobre filmes e séries', image: '/assets/images/projects/nestjs-projetc.png', icons: [imagens.typescript,imagens.nestjs] },
         { id: 4, title: 'Manjaro Setup',link:"https://github.com/hellyaxs/manjaro-setup", description: 'Scrpit pos-instalação para Linux', image: '/assets/images/projects/manjaro-setup.png', icons: [imagens.linux, imagens.golang] },
         { id: 5, title: 'API Rest - Spring boot',link:"https://github.com/hellyaxs/SantanderBankline_Api", description: 'Sistema de Transções Bancarias', image: '/assets/images/projects/arquiterure.png',icons: [imagens.spring, imagens.java] },
+        { id: 6, title: 'Netflix TMDB - angular',link:"https://github.com/hellyaxs/netflix-project", description: 'listagem de filmes com api tmdb', image: '/assets/images/projects/filmes-online.png',icons: [imagens.angular, imagens.typescript] },
       ];
     
       return (
