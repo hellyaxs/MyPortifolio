@@ -1,0 +1,309 @@
+# 🎨 Design System — tiobendev.vercel.app/portfolio
+# Cursor Rules
+
+## Stack & Tech
+
+- Framework: **Next.js** (App Router)
+- Language: **TypeScript**
+- Styling: **Tailwind CSS**
+- Components: **Shadcn UI**
+- Deploy: **Vercel**
+
+---
+
+## Visual Identity
+
+- Estética: **Dark, minimalista, técnica e pessoal**
+- Tom: **Direto, humano, sem exagero de elementos decorativos**
+- Sensação: Portfolio de dev indie — sem frescura, com personalidade
+- Inspiração: Pessoal + técnico + empreendedor
+
+---
+
+## Cores
+
+```
+Background principal:    #0a0a0a  (preto quase puro)
+Background secundário:   #111111  (preto suave para cards)
+Background card:         #1a1a1a  (cinza escuro elevado)
+Border sutil:            #262626  (borda discreta)
+Border card:             #2e2e2e  (borda de card)
+
+Texto primário:          #f5f5f5  (branco quase puro)
+Texto secundário:        #a3a3a3  (cinza neutro)
+Texto muted:             #737373  (cinza apagado para datas, labels)
+
+Accent principal:        #ffffff  (branco puro — CTAs e destaques)
+Accent hover:            #e5e5e5  (hover de botões brancos)
+
+Tags/Badges fundo:       #1f1f1f
+Tags/Badges texto:       #d4d4d4
+Tags/Badges border:      #333333
+```
+
+---
+
+## Tipografia
+
+```
+Font principal:   Inter, system-ui, sans-serif
+Font código:      JetBrains Mono, monospace (se usado)
+
+Hierarquia:
+  h1 — Heading principal:   3xl–5xl, font-bold, tracking-tight, text-white
+  h2 — Section title:       2xl–3xl, font-semibold, text-white
+  h3 — Card title:          lg–xl, font-medium, text-white
+  p  — Body:                sm–base, text-neutral-400 / text-neutral-300
+  small/label:              xs–sm, text-neutral-500, uppercase tracking-wide
+
+Espaçamento de texto:
+  leading-relaxed para parágrafos
+  leading-tight para headings
+```
+
+---
+
+## Spacing & Layout
+
+```
+Container:         max-w-3xl mx-auto px-4 sm:px-6
+Seções:            py-16 a py-24 entre blocos principais
+Gap de cards:      gap-4 a gap-6
+Padding de card:   p-4 a p-6
+Border-radius:     rounded-xl (cards), rounded-md (badges/tags), rounded-full (avatares)
+```
+
+---
+
+## Componentes
+
+### Avatar / Iniciais
+```
+w-10 h-10 rounded-full
+bg-neutral-800 border border-neutral-700
+text-sm font-semibold text-white text-center flex items-center justify-center
+```
+
+### Cards de Experiência / Educação
+```
+border border-neutral-800
+bg-neutral-900 / bg-neutral-950
+rounded-xl p-5
+hover: border-neutral-700 transition-colors
+```
+
+### Badges / Tags de Tecnologia
+```
+inline-flex items-center
+rounded-md px-2 py-0.5
+bg-neutral-900 border border-neutral-800
+text-xs text-neutral-400
+font-mono (opcional)
+```
+
+### Botões
+```
+Primário:
+  bg-white text-black rounded-md px-4 py-2 text-sm font-medium
+  hover:bg-neutral-200 transition-colors
+
+Secundário / Ghost:
+  border border-neutral-700 text-neutral-300 rounded-md px-4 py-2 text-sm
+  hover:border-neutral-500 hover:text-white transition-colors
+
+Link simples:
+  text-neutral-400 hover:text-white underline-offset-4 hover:underline transition-colors
+```
+
+### Links de Projetos
+```
+group flex items-center gap-2 text-sm text-neutral-400
+hover:text-white transition-colors
+```
+
+### Section Header
+```
+text-xs uppercase tracking-widest text-neutral-500 font-semibold mb-6
+```
+
+### Separadores
+```
+border-t border-neutral-800 my-12
+```
+
+### Cards de Projeto (imagem + texto)
+```
+rounded-xl overflow-hidden border border-neutral-800
+bg-neutral-950
+hover:border-neutral-700 transition-all duration-200
+group
+
+Imagem: aspect-video object-cover w-full group-hover:opacity-90 transition
+Corpo:  p-4 flex flex-col gap-2
+Título: text-base font-semibold text-white
+Desc:   text-sm text-neutral-400 leading-relaxed
+Tags:   flex flex-wrap gap-1.5 mt-2
+```
+
+### Social Links Cards
+```
+border border-neutral-800 rounded-xl p-4
+flex items-start gap-3
+hover:border-neutral-700 transition-colors
+
+Ícone: w-8 h-8 rounded-md bg-neutral-800 flex items-center justify-center text-white
+Título: text-sm font-semibold text-white
+Desc:   text-xs text-neutral-500 leading-relaxed
+Link:   text-xs text-neutral-400 hover:text-white mt-2 inline-block transition-colors
+```
+
+---
+
+## Animações & Transições
+
+```
+transition-colors duration-200   — padrão para hover de cor
+transition-all duration-200      — hover de cards
+opacity-0 → opacity-100          — fade-in suave em mount (opcional)
+hover:scale-[1.01]               — escala sutil em cards de projeto (opcional)
+```
+
+---
+
+## Padrões de UX
+
+- **Sem header/nav complex** — identidade minimalista
+- **Seções separadas por espaçamento**, não por linhas grossas
+- **Labels de seção em uppercase/tracking** antes do conteúdo principal
+- **Datas sempre em muted** — contexto sem destaque
+- **Avatar por iniciais** quando sem foto
+- **Tags de tech sempre como badges** discretos no card
+- **Links externos** abrem em nova aba com `target="_blank"`
+- **Mobile-first** — layout único coluna no mobile, mantém no desktop
+
+---
+
+## Nomenclatura de Componentes (sugestão)
+
+```
+<HeroSection />
+<AboutSection />
+<WorkExperienceCard />
+<EducationCard />
+<SkillBadge />
+<ProjectCard />
+<SocialLinkCard />
+<ContactSection />
+<SectionLabel />     ← label de seção uppercase
+<TechTag />          ← badge de tecnologia
+```
+
+---
+
+## Regras Gerais do Cursor
+
+1. Sempre usar **dark mode como padrão absoluto** — sem suporte a light mode
+2. Usar **Tailwind utility classes** — sem CSS custom desnecessário
+3. Preferir **neutral** como escala de cinza base (neutral-800, neutral-700, etc.)
+4. **Nunca usar cores vibrantes** sem necessidade — branco e neutros são os únicos acentos
+5. **Espaçamento generoso** entre seções — respiração é parte do design
+6. Componentes sempre com **TypeScript tipado**
+7. Usar **Shadcn UI** como base de primitivos quando necessário
+8. **Font-mono** apenas para código, tags ou detalhes técnicos sutis
+9. Todo hover deve ter **transition suave** (`transition-colors` ou `transition-all`)
+10. Manter **hierarquia visual clara**: branco = importante, neutro claro = secundário, neutro escuro = muted
+
+---
+---
+
+# 🎨 Paleta de Cores — eliasengenharia.netlify.app
+> Extraído de: https://eliasengenharia.netlify.app/
+> Stack: Next.js · TypeScript · Tailwind CSS
+
+## Identidade Visual
+
+- Estética: **Dark tech — azul profundo + verde/cyan neon como accent**
+- Tom: Portfolio de engenheiro de computação — denso, técnico, com energia
+- Sensação: "Hacker profissional" — escuro, contrastado, com destaques vibrantes
+
+---
+
+## Cores
+
+```
+/* ── Backgrounds ─────────────────────────────────── */
+Background principal:    #050816   (azul-preto profundo — quase space)
+Background secundário:   #0d1117   (dark azulado para seções alternadas)
+Background card:         #100d25   (roxo-escuro elevado)
+Background card hover:   #151030   (roxo mais denso no hover)
+
+/* ── Borders ─────────────────────────────────────── */
+Border sutil:            #1c1738   (roxo discreto)
+Border card:             #2a2060   (roxo médio para cards)
+Border accent:           #915eff40 (roxo vibrante transparente — glow border)
+
+/* ── Textos ───────────────────────────────────────── */
+Texto primário:          #ffffff   (branco puro)
+Texto secundário:        #aaa6c3   (lavanda/lilás apagado)
+Texto muted:             #7b7b8b   (cinza-roxo para labels e datas)
+
+/* ── Accents / Destaques ─────────────────────────── */
+Accent primário (roxo):  #915eff   (roxo vibrante — headings, CTAs)
+Accent secundário (cyan):#00d4ff   (cyan/azul elétrico — destaques secundários)
+Accent verde:            #00cea8   (verde-teal — tech badges, ícones ativos)
+Gradient accent:         linear-gradient(90deg, #00cea8, #00d4ff, #915eff)
+
+/* ── Botões ───────────────────────────────────────── */
+Botão primário fundo:    #915eff   (roxo vibrante)
+Botão primário texto:    #ffffff
+Botão primário hover:    #7a4fd6   (roxo mais escuro)
+Botão outline border:    #915eff
+Botão outline texto:     #915eff
+Botão outline hover bg:  #915eff1a (roxo transparente)
+
+/* ── Tags / Badges ───────────────────────────────── */
+Badge fundo:             #0d1117
+Badge border:            #1c1738
+Badge texto:             #aaa6c3
+Badge accent fundo:      #915eff1a
+Badge accent texto:      #c4aaff
+
+/* ── Glow / Sombras ──────────────────────────────── */
+Glow roxo:               box-shadow: 0 0 20px #915eff66
+Glow cyan:               box-shadow: 0 0 20px #00d4ff44
+Card shadow:             box-shadow: 0 4px 24px rgba(9,5,38,0.7)
+```
+
+## Tailwind Config (extensão sugerida)
+
+```js
+// tailwind.config.js
+extend: {
+  colors: {
+    primary:    '#915eff',
+    secondary:  '#00d4ff',
+    tertiary:   '#100d25',
+    accent:     '#00cea8',
+    'bg-deep':  '#050816',
+    'bg-dark':  '#0d1117',
+    'text-sub': '#aaa6c3',
+    'text-muted':'#7b7b8b',
+  },
+  boxShadow: {
+    'glow-purple': '0 0 20px #915eff66',
+    'glow-cyan':   '0 0 20px #00d4ff44',
+    'card':        '0 4px 24px rgba(9,5,38,0.7)',
+  }
+}
+```
+
+## Regras de Uso das Cores (eliasengenharia)
+
+1. **Background sempre azul-preto** (`#050816`) — nunca preto puro neutro
+2. **Accent roxo (`#915eff`)** para CTAs, headings em destaque e bordas ativas
+3. **Cyan (`#00d4ff`)** para destaques técnicos secundários e ícones de tech
+4. **Verde-teal (`#00cea8`)** para status ativo, progresso e badges positivos
+5. **Gradiente accent** nos títulos de seção principais
+6. **Glow effects** em hover de cards e botões — parte da identidade
+7. **Textos secundários em lavanda** (`#aaa6c3`), não em cinza puro
+8. Evitar branco puro em grandes blocos — usar `#e8e0ff` (off-white lilás) para parágrafos longos

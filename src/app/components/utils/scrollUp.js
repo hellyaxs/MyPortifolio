@@ -1,55 +1,38 @@
 "use client"
 import { useEffect, useState } from 'react';
-import { IoIosArrowRoundUp } from 'react-icons/io';
+import { Button } from '@/app/components/ui/button';
+import { ArrowUp } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export default function ScrollUp() {
-    const isBrowser = () => typeof window !== 'undefined'; 
+  const [isVisible, setIsVisible] = useState(false);
 
-    function scrollToTop() {
-        if (!isBrowser()) return;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  
-    const [isVisible, setIsVisible] = useState(false);
-  
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 300);
     };
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []); 
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-
-    return (
-        <>
-        {isVisible &&
-            (
-            <button
-              className={`
-              fixed bottom-0 right-0 bg-amber-500 rounded-lg mr-7 mb-[71px] z-50 
-              items-center text-xl flex gap-2 
-              transition-transform transform 
-              duration-300 ease-in-out
-              scale-0 translate-y-5
-              animate-[fadeInUp_0.5s_ease-in-out] 
-              ${isVisible ? 'scale-100 translate-y-0' : 'scale-0'}
-              hover:scale-110
-          `}
-              onClick={scrollToTop}
-            >
-              <IoIosArrowRoundUp className="inline-block h-12 w-10" />
-            </button>
-            )
-}
-        </>    
-    )
-   
+  return (
+    <Button
+      onClick={scrollToTop}
+      size="icon"
+      variant="gradient"
+      aria-label="Voltar ao topo"
+      className={cn(
+        'fixed bottom-6 right-6 z-50 rounded-xl shadow-lg transition-all duration-300',
+        isVisible
+          ? 'translate-y-0 opacity-100 scale-100'
+          : 'translate-y-4 opacity-0 scale-90 pointer-events-none'
+      )}
+    >
+      <ArrowUp className="h-5 w-5" />
+    </Button>
+  );
 }

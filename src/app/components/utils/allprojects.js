@@ -1,77 +1,49 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { AiOutlineAppstore } from 'react-icons/ai'
-import { imagens } from './icons-LP'
+import Link from 'next/link';
+import Image from 'next/image';
+import { imagens } from './icons-LP';
+import { Button } from '@/app/components/ui/button';
+import { Card, CardContent } from '@/app/components/ui/card';
+import { ExternalLink } from 'lucide-react';
+
+const cubeIcons = [
+  { src: imagens.angular, alt: 'Angular' },
+  { src: imagens.nextjs, alt: 'Next.js' },
+  { src: imagens.javascript, alt: 'JavaScript' },
+  { src: imagens.docker, alt: 'Docker' },
+  { src: imagens.typescript, alt: 'TypeScript' },
+  { src: imagens.nestjs, alt: 'NestJS' },
+];
 
 export default function AllProjects({ title }) {
   return (
-    <>
-      <div className="mt-24 flex items-center w-screen max-w-[600px] h-auto rounded-[15px] bg-dark border dark:border-blue-900">
-        <div className="flex flex-col py-8 justify-start mr-10 items-center">
-        <h4 className="font-black text-[1.8rem] mb-5 dark:text-emerald-600">{title}</h4>
-          <Link href={'https://github.com/hellyaxs?tab=repositories'} target='_blank'>
-            <button className="inline-flex justify-center dark:text-emerald-600 items-center text-center gap-[7px] cursor-pointer border-[0.25em] border-secondColor px-6 py-4 text-[1rem] font-bold bg-transparent rounded-[1em] outline-none relative -top-1 transition-all duration-300 hover:text-black hover:bg-white hover:shadow-[0_0_1em_0.25em_var(--hoverSecond),_0_0_4em_2em_var(--hoverSecond),_inset_0_0_0.75em_0.25em_white]">
-              Projetos <AiOutlineAppstore size={20} />
-            </button>
-          </Link>
+    <Card className="border-border bg-card w-full max-w-lg">
+      <CardContent className="flex items-center justify-between p-6 sm:p-8 gap-6">
+        <div className="flex flex-col gap-4">
+          <h4 className="text-xl sm:text-2xl font-bold text-foreground">{title}</h4>
+          <p className="text-sm text-muted-foreground">
+            Veja todos os meus repositórios no GitHub
+          </p>
+          <Button asChild variant="gradient" className="gap-2 w-fit">
+            <Link href="https://github.com/hellyaxs?tab=repositories" target="_blank" rel="noopener noreferrer">
+              Ver Projetos
+              <ExternalLink className="w-4 h-4" />
+            </Link>
+          </Button>
         </div>
 
-          <div className="cubo">
-            <div className="stage-cube-cont ">
-              <div className="cubespinner">
-                <div className="face1">
-                  <Image
-                    width={72}
-                    height={72}
-                    src={imagens.angular}
-                    alt="Html"
-                  />
+        {/* 3D Cube */}
+        <div className="cubo shrink-0">
+          <div className="stage-cube-cont">
+            <div className="cubespinner">
+              {cubeIcons.map((icon, i) => (
+                <div key={i} className={`face${i + 1}`}>
+                  <Image width={72} height={72} src={icon.src} alt={icon.alt} />
                 </div>
-                <div className="face2">
-                  <Image
-                    width={72}
-                    height={72}
-                    src={imagens.nextjs}
-                    alt="Css"
-                  />
-                </div>
-                <div className="face3">
-                  <Image
-                    width={72}
-                    height={72}
-                    src={imagens.javascript}
-                    alt="JavaScript"
-                  />
-                </div>
-                <div className="face4">
-                  <Image
-                    width={72}
-                    height={72}
-                    src={imagens.docker}
-                    alt="React JS"
-                  />
-                </div>
-                <div className="face5">
-                  <Image
-                    width={72}
-                    height={72}
-                    src={imagens.typescript}
-                    alt="TypeScript"
-                  />
-                </div>
-                <div className="face6">
-                  <Image
-                    width={72}
-                    height={72}
-                    src={imagens.nestjs}
-                    alt="Next JS"
-                  />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-      
-      </div>
-    </>
-  )
+        </div>
+      </CardContent>
+    </Card>
+  );
 }

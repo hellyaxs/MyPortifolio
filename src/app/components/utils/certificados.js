@@ -25,15 +25,14 @@ export default function CarroselCertificados() {
 
   return (
     <>
-      <Swiper
+        <Swiper
         effect={'cards'}
         grabCursor={true}
         modules={[EffectCards]}
-        className="-translate-x-3  "
       >
         {sources.map((source, index) => (
           <SwiperSlide key={index}>
-            <Image src={source} alt={`certificado${index}`} objectFit="cover" width={340} height={256} />
+            <Image src={source} alt={`certificado${index}`} objectFit="cover" width={520} height={340} />
           </SwiperSlide>
         ))}
        
