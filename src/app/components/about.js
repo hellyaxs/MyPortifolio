@@ -14,7 +14,7 @@ const socialLinks = [
 ];
 
 const stats = [
-  { value: '5+', label: 'Anos estudando' },
+  { value: '2+', label: 'Anos de experiência' },
   { value: '10+', label: 'Projetos' },
   { value: '12+', label: 'Tecnologias' },
 ];
@@ -25,7 +25,7 @@ const experience = [
     company: 'Adasi Software',
     role: 'Engenheiro de Software JR',
     period: 'Jan 2025 – Presente',
-    type: 'CLT',
+    type: 'PJ',
     tags: ['Node.js', 'TypeScript', 'AWS S3', 'Firebase', 'Redis', 'TypeORM', 'SQL'],
     description:
       'Desenvolvimento e manutenção de aplicações backend com Node.js & TypeScript, criando APIs RESTful e integrações com AWS S3 e Firebase. Processamento assíncrono com Redis, otimização de consultas SQL com TypeORM, participação em code reviews e apoio ao time de produto no refinamento de requisitos.',
@@ -35,7 +35,7 @@ const experience = [
     company: 'Agência19',
     role: 'Engenheiro de Software JR',
     period: '2023 – 2025',
-    type: 'CLT',
+    type: 'Autônomo',
     tags: ['NestJS', 'PHP', 'Flutter', 'Docker', 'GitHub Actions', 'Linux'],
     description:
       'Atuação em backend com Node.js (NestJS) e PHP, além de desenvolvimento mobile com Flutter. Containers Docker, pipelines de CI/CD via GitHub Actions e gerenciamento de infraestrutura em nuvem. Participação ativa em deploys, integrações entre sistemas e manutenção de aplicações em produção.',
@@ -140,18 +140,26 @@ export default function About() {
         <ScrollReveal delay={60}>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed mb-8">
             <p>
-              Desenvolvedor Full Stack apaixonado por transformar ideias em experiências digitais.
-              Domino Java, Python e TypeScript — o que me permite cobrir todo o ciclo de
-              desenvolvimento, do backend ao mobile.
+              Engenheiro de software apaixonado por transformar ideias em produtos digitais que geram
+              impacto real. Minha jornada é guiada pela curiosidade e pela busca constante de
+              aprendizado — cada projeto é uma oportunidade de contar uma história através do código.
             </p>
             <p>
-              Acredito que cada projeto é uma oportunidade de resolver um problema real. Estou
-              sempre aberto a novas colaborações.{' '}
+              Com <span className="text-foreground font-medium">2 anos de experiência</span> focados
+              em backend, trabalho com{' '}
+              <span className="text-foreground font-medium">Node.js, TypeScript</span>, APIs RESTful,
+              sistemas assíncronos e integrações com serviços externos. Vivência em ambientes de
+              nuvem, CI/CD e colaboração com times de produto — priorizando boas práticas, código
+              limpo e entrega de valor.
+            </p>
+            <p>
+              Minha missão é colaborar com empresas para transformar seus objetivos em soluções
+              concretas. Se você quer levar seu projeto ao próximo nível,{' '}
               <button
                 onClick={() => document.dispatchEvent(new CustomEvent('tab-change', { detail: 'contact' }))}
                 className="text-primary hover:underline underline-offset-2 font-medium cursor-pointer"
               >
-                Vamos conversar →
+                vamos conversar →
               </button>
             </p>
           </div>

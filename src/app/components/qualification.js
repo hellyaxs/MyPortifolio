@@ -14,7 +14,7 @@ const education = [
     institution: 'UFRPE — Universidade Federal Rural de Pernambuco',
     period: '2020 – 2025',
     type: 'Graduação',
-    progress: 80,
+    progress: 95,
     description:
       'Curso de nível superior com foco em algoritmos, estruturas de dados, sistemas operacionais, redes, banco de dados e desenvolvimento de software. Experiência prática em projetos acadêmicos com Java, Python e C. Conclusão prevista para 2025.',
     tags: ['Java', 'Python', 'C', 'Linux', 'Banco de Dados'],
@@ -38,7 +38,7 @@ const workExperience = [
     degree: 'Adasi Software',
     institution: 'Engenheiro de Software JR · Caruaru, PE',
     period: 'Jan 2025 – Presente',
-    type: 'CLT',
+    type: 'PJ',
     progress: null,
     tags: ['Node.js', 'TypeScript', 'AWS S3', 'Firebase', 'Redis', 'TypeORM', 'SQL'],
     description:
@@ -49,7 +49,7 @@ const workExperience = [
     degree: 'Agência19',
     institution: 'Engenheiro de Software JR · Belo Jardim, PE',
     period: '2023 – 2025',
-    type: 'CLT',
+    type: 'Autônomo',
     progress: null,
     tags: ['NestJS', 'PHP', 'Flutter', 'Docker', 'GitHub Actions', 'Linux'],
     description:
