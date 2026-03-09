@@ -10,10 +10,10 @@ import { workExperience } from '@/app/data/experience';
 
 const education = [
   {
-    initials: 'UP',
+    initials: 'UFR',
     degree: 'Engenharia da Computação',
     institution: 'UFRPE — Universidade Federal Rural de Pernambuco',
-    period: '2020 – 2025',
+    period: '2020 – 2026 (Conclusão Prevista)',
     type: 'Graduação',
     progress: 95,
     description:
@@ -21,9 +21,9 @@ const education = [
     tags: ['Java', 'Python', 'C', 'Linux', 'Banco de Dados'],
   },
   {
-    initials: 'ET',
+    initials: 'ETE',
     degree: 'Análise e Desenvolvimento de Sistemas',
-    institution: 'ETE Edson Mororó Moura',
+    institution: 'ETEEM - Escola Técnica Estadual de Edson Mororó Moura',
     period: '2017 – 2019',
     type: 'Técnico',
     progress: 100,

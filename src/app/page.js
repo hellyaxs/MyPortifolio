@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Sidebar from './components/sidebar';
 import Home from './components/home';
 import About from './components/about';
-import Skins from './components/skins';
+import Blog from './components/blog';
 import Projects from './components/projetos';
 import Qualification from './components/qualification';
 import Contact from './components/contact';
@@ -11,7 +11,7 @@ import Contact from './components/contact';
 const PAGE_LABELS = {
   home:      '~/inicio',
   about:     '~/sobre',
-  skills:    '~/habilidades',
+  blog:      '~/blog',
   projects:  '~/projetos',
   education: '~/formacao',
   contact:   '~/contato',
@@ -51,9 +51,9 @@ export default function Page() {
           transition: 'opacity 0.18s ease',
         }}
       >
-        {activeTab === 'home' && <Home />}
+        {activeTab === 'home'      && <Home />}
         {activeTab === 'about'     && <About />}
-        {activeTab === 'skills'    && <Skins />}
+        {activeTab === 'blog'      && <Blog />}
         {activeTab === 'projects'  && <Projects />}
         {activeTab === 'education' && <Qualification />}
         {activeTab === 'contact'   && <Contact />}

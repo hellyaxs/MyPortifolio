@@ -1,18 +1,18 @@
 "use client"
 import { useEffect, useState } from 'react';
 import {
-  Home, User, Code2, FolderOpen, GraduationCap, Mail,
+  Home, User, BookOpen, FolderOpen, GraduationCap, Mail,
   Github, Linkedin, MessageCircle, Sun, Moon
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export const navItems = [
-  { id: 'home',      label: 'Home',        icon: Home },
-  { id: 'about',     label: 'Sobre',       icon: User },
-  { id: 'skills',    label: 'Habilidades', icon: Code2 },
-  { id: 'projects',  label: 'Projetos',    icon: FolderOpen },
-  { id: 'education', label: 'Formação',    icon: GraduationCap },
-  { id: 'contact',   label: 'Contato',     icon: Mail },
+  { id: 'home',      label: 'Home',     icon: Home },
+  { id: 'about',     label: 'Sobre',    icon: User },
+  { id: 'blog',      label: 'Blog',     icon: BookOpen },
+  { id: 'projects',  label: 'Projetos', icon: FolderOpen },
+  { id: 'education', label: 'Formação', icon: GraduationCap },
+  { id: 'contact',   label: 'Contato',  icon: Mail },
 ];
 
 const socialLinks = [
