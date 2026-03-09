@@ -3,7 +3,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Title from './utils/title';
 import { Button } from '@/app/components/ui/button';
-import { Download, Linkedin, Github, MessageCircle, ChevronDown } from 'lucide-react';
+import { Download, Linkedin, Github, MessageCircle, ChevronDown, MapPin } from 'lucide-react';
+import { workExperience } from '@/app/data/experience';
 import ScrollReveal from './utils/scroll-reveal';
 import { cn } from '@/lib/utils';
 
@@ -19,28 +20,6 @@ const stats = [
   { value: '12+', label: 'Tecnologias' },
 ];
 
-const experience = [
-  {
-    initials: 'AD',
-    company: 'Adasi Software',
-    role: 'Engenheiro de Software JR',
-    period: 'Jan 2025 – Presente',
-    type: 'PJ',
-    tags: ['Node.js', 'TypeScript', 'AWS S3', 'Firebase', 'Redis', 'TypeORM', 'SQL'],
-    description:
-      'Desenvolvimento e manutenção de aplicações backend com Node.js & TypeScript, criando APIs RESTful e integrações com AWS S3 e Firebase. Processamento assíncrono com Redis, otimização de consultas SQL com TypeORM, participação em code reviews e apoio ao time de produto no refinamento de requisitos.',
-  },
-  {
-    initials: 'A19',
-    company: 'Agência19',
-    role: 'Engenheiro de Software JR',
-    period: '2023 – 2025',
-    type: 'Autônomo',
-    tags: ['NestJS', 'PHP', 'Flutter', 'Docker', 'GitHub Actions', 'Linux'],
-    description:
-      'Atuação em backend com Node.js (NestJS) e PHP, além de desenvolvimento mobile com Flutter. Containers Docker, pipelines de CI/CD via GitHub Actions e gerenciamento de infraestrutura em nuvem. Participação ativa em deploys, integrações entre sistemas e manutenção de aplicações em produção.',
-  },
-];
 
 function ExperienceCard({ exp }) {
   const [open, setOpen] = useState(false);
@@ -65,6 +44,11 @@ function ExperienceCard({ exp }) {
             <div>
               <p className="text-sm font-semibold text-foreground leading-tight">{exp.company}</p>
               <p className="text-xs text-muted-foreground mt-0.5">{exp.role}</p>
+              {exp.location && (
+                <p className="flex items-center gap-1 text-[10px] text-muted-foreground/70 mt-0.5">
+                  <MapPin className="w-2.5 h-2.5 shrink-0" />{exp.location}
+                </p>
+              )}
             </div>
             <div className="flex flex-col items-end gap-1 shrink-0">
               <span className="text-[10px] text-muted-foreground">{exp.period}</span>
@@ -184,7 +168,7 @@ export default function About() {
               Experiência
             </h3>
             <div className="space-y-3">
-              {experience.map((exp, i) => (
+              {workExperience.map((exp, i) => (
                 <ExperienceCard key={i} exp={exp} />
               ))}
             </div>

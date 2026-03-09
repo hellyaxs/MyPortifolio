@@ -4,8 +4,9 @@ import Title from './utils/title';
 import CarroselCertificados from './utils/certificados';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/app/components/ui/tabs';
 import { Progress } from '@/app/components/ui/progress';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { workExperience } from '@/app/data/experience';
 
 const education = [
   {
@@ -32,30 +33,6 @@ const education = [
   },
 ];
 
-const workExperience = [
-  {
-    initials: 'AD',
-    degree: 'Adasi Software',
-    institution: 'Engenheiro de Software JR · Caruaru, PE',
-    period: 'Jan 2025 – Presente',
-    type: 'PJ',
-    progress: null,
-    tags: ['Node.js', 'TypeScript', 'AWS S3', 'Firebase', 'Redis', 'TypeORM', 'SQL'],
-    description:
-      'Desenvolvimento e manutenção de aplicações backend com Node.js & TypeScript, APIs RESTful e integrações com AWS S3 e Firebase. Processamento assíncrono com Redis, otimização de consultas SQL com TypeORM, code reviews e apoio ao time de produto no refinamento de requisitos de negócio.',
-  },
-  {
-    initials: 'A19',
-    degree: 'Agência19',
-    institution: 'Engenheiro de Software JR · Belo Jardim, PE',
-    period: '2023 – 2025',
-    type: 'Autônomo',
-    progress: null,
-    tags: ['NestJS', 'PHP', 'Flutter', 'Docker', 'GitHub Actions', 'Linux'],
-    description:
-      'Backend com Node.js (NestJS) e PHP, além de desenvolvimento mobile com Flutter. Containers Docker, pipelines CI/CD com GitHub Actions e infraestrutura em nuvem. Deploys, integrações entre sistemas e manutenção de aplicações em produção.',
-  },
-];
 
 function EducationCard({ edu }) {
   const [open, setOpen] = useState(false);
@@ -77,8 +54,13 @@ function EducationCard({ edu }) {
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-2">
             <div>
-              <p className="text-sm font-semibold text-foreground leading-tight">{edu.degree}</p>
-              <p className="text-xs text-muted-foreground mt-0.5">{edu.institution}</p>
+              <p className="text-sm font-semibold text-foreground leading-tight">{edu.degree ?? edu.company}</p>
+              <p className="text-xs text-muted-foreground mt-0.5">{edu.institution ?? edu.role}</p>
+              {edu.location && (
+                <p className="flex items-center gap-1 text-[10px] text-muted-foreground/70 mt-0.5">
+                  <MapPin className="w-2.5 h-2.5 shrink-0" />{edu.location}
+                </p>
+              )}
             </div>
             <div className="flex flex-col items-end gap-1 shrink-0">
               <span className="text-[10px] text-muted-foreground">{edu.period}</span>
@@ -89,7 +71,7 @@ function EducationCard({ edu }) {
           </div>
 
           {/* Progress bar — só para educação */}
-          {edu.progress !== null && (
+          {edu.progress != null && (
             <div className="flex items-center gap-3 mt-3">
               <Progress value={edu.progress} className="flex-1 h-1" />
               <span className="text-xs font-medium text-primary w-8 text-right shrink-0">{edu.progress}%</span>
