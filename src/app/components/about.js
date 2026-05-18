@@ -15,7 +15,7 @@ const socialLinks = [
 ];
 
 const stats = [
-  { value: '2+', label: 'Anos de experiência' },
+  { value: new Date().getFullYear() - 2023 + '+', label: 'Anos de experiência' },
   { value: '10+', label: 'Projetos' },
   { value: '12+', label: 'Tecnologias' },
 ];
@@ -106,7 +106,7 @@ export default function About() {
             <div className="flex-1 min-w-0">
               <h3 className="text-base font-semibold text-foreground">Elias Vitor</h3>
               <p className="text-xs text-muted-foreground mt-0.5">
-                Full Stack Developer · Engenheiro da Computação · Belo Jardim, PE
+                Engenheiro de Software Full Stack · Engenheiro da Computação · Belo Jardim, PE
               </p>
               <div className="flex items-center gap-3 mt-2">
                 {socialLinks.map(({ href, label, icon: Icon }) => (
@@ -129,7 +129,7 @@ export default function About() {
               aprendizado — cada projeto é uma oportunidade de contar uma história através do código.
             </p>
             <p>
-              Com <span className="text-foreground font-medium">2 anos de experiência</span> focados
+              Com <span className="text-foreground font-medium">{new Date().getFullYear() - 2023} anos de experiência</span> focados
               em backend, trabalho com{' '}
               <span className="text-foreground font-medium">Node.js, TypeScript</span>, APIs RESTful,
               sistemas assíncronos e integrações com serviços externos. Vivência em ambientes de

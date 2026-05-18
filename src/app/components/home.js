@@ -7,7 +7,7 @@ import ScrollReveal from './utils/scroll-reveal';
 import MarqueeDev from './utils/marquee-dev';
 import Cube3D from './utils/cube3d';
 
-const stack = ['Node.js', 'TypeScript', 'NestJS', 'Spring Boot', 'Flutter', 'Docker', 'Python'];
+const stack = ['Node.js', 'TypeScript', 'NestJS', 'Next.js', 'Flutter', 'Docker', 'PostgreSQL', 'Redis'];
 
 export default function Home() {
   return (
@@ -122,7 +122,7 @@ export default function Home() {
         <ScrollReveal delay={240}>
           <p className="text-sm text-muted-foreground leading-relaxed mt-8 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
             Engenheiro de software com foco em backend, atuando no desenvolvimento de soluções web
-            escaláveis e orientadas ao negócio, com 2 anos de experiência. Trabalho com{' '}
+            escaláveis e orientadas ao negócio, com {new Date().getFullYear() - 2023} anos de experiência. Trabalho com{' '}
             <span className="text-foreground font-medium">Node.js, TypeScript</span>, APIs RESTful,
             sistemas assíncronos e integrações com serviços externos e bancos de dados SQL. Vivência
             em ambientes de nuvem, CI/CD e colaboração com times de produto — priorizando boas
